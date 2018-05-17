@@ -1,0 +1,269 @@
+div#header {
+    margin: 0 20px;
+    background: rgba(0, 100, 255, 0.5);
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #000;
+    margin: 5px 10px;
+    overflow: auto;
+}
+
+a.discord {
+    padding-left: 10px;
+}
+
+a.discord img {
+    filter: hue-rotate(290deg);
+    transition: 150ms;
+}
+
+header {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+}
+
+img.b {
+    width: 40px;
+    margin: -8px 10px -10px 0px;
+    filter: drop-shadow(0 0 5px #00ff9c);
+    vertical-align: bottom;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.tabs {
+    margin-bottom: -8px;
+    margin-top: 10px;
+}
+
+#header-wrapper a {
+    color:  #fff !important;
+}
+
+.tabs .tab {
+    background: #116cca;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 5px;
+    color: #fff !important;
+}
+
+.tabs .tab:hover {
+    filter: brightness(1.1);
+}
+
+li.tab.selected {
+    background: #0590d2;
+}
+
+.tabs .tab > a {
+    border-bottom:  none;
+    padding: 0.3em 1em;
+    margin-bottom: 0px;
+    transition: none;
+}
+
+.tab.selected > a {
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    padding-bottom: calc(0.3em - 2px);
+}
+@media screen and (max-width: 768px) {
+    .level-left+.level-right {
+        margin-top: 0.5em;
+    }
+    section#content-wrapper {
+        height: calc(100vh - 167px) !important;
+    }
+}
+
+section#content-wrapper {
+    background-color:  transparent;
+    overflow:  auto;
+    height: calc(100vh - 142px);
+}
+
+div#commands, div#features {
+    margin: 10px;
+    box-shadow: inset 0px 0px 10px #000;
+    border-radius: 10px;
+    padding: 10px;
+    height: calc(100% - 3em);
+}
+
+html, section {
+    overflow: hidden !important;
+}
+
+span.code {
+    font-family: Consolas;
+    font-size: 13px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 2px 4px 3px;
+    border-radius: 3px;
+}
+
+.command {
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    background-color: #2f3333;
+    transition: all 500ms;
+}
+.command.flash {
+    background: rgba(255, 167, 0, 0.2);
+}
+
+.usage {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.usage.right {
+    border-left: 3px solid #00bdff;
+    padding-left: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+span.category {
+    color: #00bdff;
+}
+
+.columns {
+    overflow:  auto !important;
+    height: 100%;
+    margin-top: .2rem;
+}
+
+.column {
+    padding: 0 1rem;
+}
+
+footer#invite-advert {
+    padding: .6rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#content > img {
+    float: left;
+    margin-right: 3em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #000;
+}
+
+#dbl-icon {
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #000;
+}
+
+div#content {
+    padding: 15px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+table#binfo {
+    height: 300px;
+}
+
+#binfo td[valign="bottom"] {
+    vertical-align: bottom;
+}
+
+.binfo > p {
+    margin-bottom: 10px;
+}
+
+#sponsors {
+    margin-top: 1em;
+}
+
+#sponsors > span {
+    color: #00bdff;
+    font-size: 18px;
+}
+
+.sponsor {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    margin: 5px;
+    padding: 2px 14px 2px 2px;
+    display: inline-block;
+}
+
+.sponsor > .pfp {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    height:  32px;
+}
+
+span.discrim {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+    #content > img {
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: block;
+        float: none;
+    }
+    #sponsors > span {
+        font-size: 16px;
+    }
+}
+
+#donate {
+    margin: 15px;
+}
+
+.method-title {
+    padding: 5px;
+    border-bottom: 3px solid #666;
+    margin-bottom: 10px;
+    display: block;
+    color: #fff !important;
+}
+
+.method-icon {
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.method-link {
+    height: 20px;
+    float: right;
+}
+
+#donate .column {
+    padding: 15px 30px;
+}
+
+img.dbl-widget {
+    vertical-align:  middle;
+    margin: 0 3px;
+}
+
+div#dbl-info {
+    margin-top: 1em;
+}
+
+/* tos page */
+.tos-section + .tos-section > .title {
+    margin-top: 20px !important;
+}
+
+ul.tos-list {
+    list-style: inside !important;
+}

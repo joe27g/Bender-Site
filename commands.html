@@ -1,0 +1,2101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bender Commands</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#FF0000">
+	<meta name="keywords" content="Discord, Bot, Bender, Best, Discord Bot, benderbot, Commands">
+	<meta name="og:title" content="Bender Commands" />
+	<meta name="og:description" content="Documentation and usage examples of all of Bender's commands. There are over 70 and more to come :3" />
+	<meta name="description" content="Documentation and usage examples of all of Bender's commands. There are over 70 and more to come :3" />
+	<meta name="og:image" content="https://benderbot.co/Bender-large.png" />
+	<meta name="og:site_name" content="Bender Bot">
+	<meta name="og:url" content="https://benderbot.co">
+	<link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css">
+	<link rel="stylesheet" href="../style-v2.0.2.css">
+	<script type="application/ld+json" id="google-breadcrumbs">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "BreadcrumbList",
+	  "itemListElement": [{
+	    "@type": "ListItem",
+	    "position": 1,
+	    "item": {
+	      "@id": "https://benderbot.co",
+	      "name": "Bender Bot"
+	    }
+	  },{
+	    "@type": "ListItem",
+	    "position": 2,
+	    "item": {
+	      "@id": "https://benderbot.co/commands",
+	      "name": "Commands"
+	    }
+	  }]
+	}
+	</script>
+</head>
+<body>
+	<section id="header-wrapper">
+        <header>
+            <a class="b" href="../"><img src="../Bender.png" class="b">Bender Commands</a>
+        </header>
+    </section>
+    <section id="nav-wrapper">
+        <div id="header" class="hero">
+            <div class="hero-head">
+                <div class="level">
+                    <div class="level-left">Syntax and usage for all commands - See the feature overview&nbsp;<a href="../features">here</a>.
+                    </div>
+                    <div class="level-right">Join the support server!
+                        <a href="https://discord.gg/99xaeGn" class="discord">
+						<img src="https://discordapp.com/api/guilds/353660669490626560/embed.png" alt="Discord server">
+    </a></div>
+                </div>
+            </div>
+            <div class="hero-foot">
+                <div class="tabs" id="tabs">
+                    <ul>
+                    	<li class="tab" id="tab-fun"><a>Fun</a></li>
+                    	<li class="tab" id="tab-infos"><a>Information</a></li>
+                    	<li class="tab" id="tab-misc"><a>Miscellaneous</a></li>
+                    	<li class="tab" id="tab-mod"><a>Moderation</a></li>
+                    	<li class="tab" id="tab-music"><a>Music</a></li>
+                    	<li class="tab" id="tab-settings"><a>Settings</a></li>
+                    	<li class="tab" id="tab-text-tools"><a>Text Tools</a></li>
+                    	<li class="tab" id="tab-util"><a>Utility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-wrapper" class="hero">
+    <div id="commands">
+        <span class="placeholder">Click on a tab to view the commands in that group.</span>
+		<div id="fun" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="8ball">
+					<span class="code">;8ball</span> - The good ol' 8-ball. RNGs are always the answer to life's toughest questions.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;8ball &lt;question&gt;</span>
+					</div>
+					<br>
+					<br>
+					Totally not stolen from <a href="https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers" target="_blank">Wikipedia</a>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;8</span>, <span class="code">;8-ball</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;8 Should I sell my soul for a role on Discord?</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="choose">
+					<span class="code">;choose</span> - Chooses something by random. Use <span class="code">|</span> to separate options.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;choose &lt;option 1 | option 2...&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;decide</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;choose go to party | drink alone | make poor life decisions</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="coin">
+					<span class="code">;coin</span> - ⛀⛁⛃⛂ Flips coin(s), heads or tails. Specify a number (between 1 and 10000) to flip that many coins.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;coin [# of coins]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;toss</span>, <span class="code">;tosscoin</span>, <span class="code">;flipcoin</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;coin 10</span>
+							<br>
+							<span class="code">;toss</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="hack">
+					<span class="code">;hack</span> - Hacks a user and steals their Discord token. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;hack [user]</span>
+					</div>
+					<br>
+					<br>
+					<span class="code">DISCLAIMER:</span> Don't take this seriously. All tokens are fake; it's just meant to be a funny and interesting command.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;token</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;hack @billy</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="poll">
+					<span class="code">;poll</span> - Creates a poll for people to vote on using reacts. Use <span class="code">|</span> to separate options. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;poll &lt;question | option 1 | option 2...&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;poll How much is Joe's life worth? | $0 | $5 | -$50</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="pong">
+					<span class="code">;pong</span> - You'll see...
+					<br>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="quote">
+					<span class="code">;quote</span> - Makes a fake quote using a username and some text. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;quote &lt;user&gt; <text></span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;quote @Joe you can quote me on that</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="random">
+					<span class="code">;random</span> - Generate a random number.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;random [minimum #] [maximum #]</span>
+					</div>
+					<br>
+					<br>
+					Default minumum number is 0, default max is 100.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;rng</span>
+					</div>
+				</div>
+				<div class="command box" id="roll">
+					<span class="code">;roll</span> - Rolls up to 100 dice, with up to 20 sides. ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;roll [# of dice] [# of sides]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;dice</span>, <span class="code">;rolldice</span>
+					</div>
+				</div>
+				<div class="command box" id="rps">
+					<span class="code">;rps</span> - Plays rock-paper-scissors with the bot.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;rps &lt;rock/paper/scissors&gt;</span>
+					</div>
+					<br>
+					<br>
+				</div>
+				<div class="command box" id="sendnudes">
+					<span class="code">;sendnudes</span> - 😉
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;nudes</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="infos" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="avatar">
+					<span class="code">;avatar</span> - Gets and embeds avatar of a user or the current server. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;avatar [user | "server"]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;pfp</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;avatar @Joe</span>
+							<br>
+							<span class="code">;avatar server</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="botinfo">
+					<span class="code">;botinfo</span> - Gets information about the bot.
+					<br>
+					Acts as a shortcut for <span class="code">info bot</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;bot</span>, <span class="code">;binfo</span>
+					</div>
+				</div>
+				<div class="command box" id="channelinfo">
+					<span class="code">;channelinfo</span> - Gets information about a role. Defaults to current channel if not provided. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;channelinfo [channel]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">info #channel</span>, but only searches channels, not roles or users.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;channel</span>, <span class="code">;cinfo</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;channelinfo #general</span>
+							<br>
+							<span class="code">;cinfo</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="channels">
+					<span class="code">;channels</span> - Lists channels in the server with some basic info. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="charinfo">
+					<span class="code">;charinfo</span> - Gets information about a Unicode character.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;charinfo &lt;character&gt;</span>
+					</div>
+					<br>
+					<br>
+					Only gets info on the first character. Supports Unicode emojis and skin tones, etc.<br>Use "quotes" around whitespace characters if you want to get info on one.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;char</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;char 🤔</span>
+							<br>
+							<span class="code">;char " "</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="discrim">
+					<span class="code">;discrim</span> - Gets a list of users with the same discrim as you, or the one specified.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;discrim [discrim]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">EMBED_LINKS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;discriminator</span>, <span class="code">;disc</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;discrim</span>
+							<br>
+							<span class="code">;discrim 1337</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="donate">
+					<span class="code">;donate</span> - Posts a link to contribute to Bender's development.
+					<br>
+				</div>
+				<div class="command box" id="emoji">
+					<span class="code">;emoji</span> - Gets information about a Discord emoji.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;emoji &lt;emoji | emoji name | emoji ID&gt;</span>
+					</div>
+					<br>
+					<br>
+					If the emoji is not in the current server, Bender will search in all of its servers.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">EMBED_LINKS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;emote</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;emoji :PartyWumpus:</span>
+							<br>
+							<span class="code">;emote PogChamp</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="findchar">
+					<span class="code">;findchar</span> - Finds a Unicode character and displays some info on it.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;findchar &lt;query&gt;</span>
+					</div>
+					<br>
+					<br>
+					To include Chinese characters, append 🇨🇳, <span class="code">han</span>, or <span class="code">chinese</span> to the end of the search term.<br>Searches both character name and Unicode block.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;charsearch</span>, <span class="code">;cs</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;findchar thinking face</span>
+							<br>
+							<span class="code">;cs noose han</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="inactive">
+					<span class="code">;inactive</span> - Shows how many members have been inactive. Optionally include a number of days between 1 and 30. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;inactive [# of days]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;purgecount</span>, <span class="code">;prunecount</span>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="info">
+					<span class="code">;info</span> - Gets information about a user, role, channel, the server, or the bot.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;info ["server" | user | "me" | role | "bot" | channel]</span>
+					</div>
+					<br>
+					<br>
+					Defaults to bot if not provided or if used in a DM.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">EMBED_LINKS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;info server</span>
+							<br>
+							<span class="code">;info @Joe</span>
+							<br>
+							<span class="code">;info #general</span>
+							<br>
+							<span class="code">;info Administrators</span>
+							<br>
+							<span class="code">;info bot</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="invite">
+					<span class="code">;invite</span> - Posts a link that you can use to add Bender to your server!
+					<br>
+				</div>
+				<div class="command box" id="inviteinfo">
+					<span class="code">;inviteinfo</span> - Gets information about a server by an invite.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;inviteinfo &lt;invite URL or code&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;inv</span>
+					</div>
+				</div>
+				<div class="command box" id="roleinfo">
+					<span class="code">;roleinfo</span> - Gets information about a role. Defaults to your highest role if not provided. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;roleinfo [role]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">info @role</span>, but only searches roles, not channels or users.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;rinfo</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;roleinfo @Admin</span>
+							<br>
+							<span class="code">;rinfo everyone</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="roles">
+					<span class="code">;roles</span> - Lists roles in the server with some basic info. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="serverinfo">
+					<span class="code">;serverinfo</span> - Gets information about the current server. <span class="gray">(Guild-only command)</span>
+					<br>
+					Acts as a shortcut for <span class="code">info server</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;server</span>, <span class="code">;sinfo</span>, <span class="code">;guildinfo</span>, <span class="code">;guild</span>, <span class="code">;ginfo</span>
+					</div>
+				</div>
+				<div class="command box" id="shard">
+					<span class="code">;shard</span> - Shows info about the bot's shards.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;shardstats</span>, <span class="code">;shardinfo</span>
+					</div>
+				</div>
+				<div class="command box" id="stats">
+					<span class="code">;stats</span> - Gets information about the server's members. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;membercount</span>, <span class="code">;mstats</span>, <span class="code">;mcount</span>
+					</div>
+				</div>
+				<div class="command box" id="status">
+					<span class="code">;status</span> - Gets technical info about the bot and other things.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;uptime</span>, <span class="code">;botstats</span>, <span class="code">;bstats</span>
+					</div>
+				</div>
+				<div class="command box" id="userinfo">
+					<span class="code">;userinfo</span> - Gets information about a user. Defaults to yourself if not provided. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;userinfo [user | "me"]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">info</span>, but only searches users, not channels or roles.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;user</span>, <span class="code">;uinfo</span>, <span class="code">;whois</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;userinfo @Joe</span>
+							<br>
+							<span class="code">;uinfo me</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="misc" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="agree">
+					<span class="code">;agree</span> - Agree to terms of the server, if it is required by the server staff.
+					<br>
+				</div>
+				<div class="command box" id="agreement">
+					<span class="code">;agreement</span> - Require users to agree to terms before they get full access to the server. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;agreement [setting] [value]</span>
+					</div>
+					<br>
+					<br>
+					Gives users a temporary <span class="code">role</span> on join that you should configure to hide all channels except the rules/TOS.<br>The <span class="code">channel</span> you set should be where your rules/TOS are posted. Bender will delete all messages in that channel that are not pinned and posted less than 2 weeks ago.<br>To accept the agreement, users must use the <span class="code">agree</span> command in the above channel or in DM.<br>The <span class="code">message</span> is what the bot will DM users upon join. If a user does not <span class="code">agree</span> within an hour, they will be sent a reminder to do so, then kicked after another hour if they don't follow through.<br>If the user has DMs disabled, Bender will mention them in the agreement channel and delete the message after 30 seconds.<br>The agreement system may be <span class="code">enable</span>d or <span class="code">disable</span>d at any time.<br>You can also change the <span class="code">wait</span> time (in minutes or hours) that a user must be a member before <span class="code">agree</span>ing.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;agreement channel #tos</span>
+							<br>
+							<span class="code">;agreement role n00b</span>
+							<br>
+							<span class="code">;agreement message <b>Welcome to our server!</b> Please read #rules and #tos before typing, and enjoy your stay!</span>
+							<br>
+							<span class="code">;agreement enable</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="clonerole">
+					<span class="code">;clonerole</span> - Creates a copy of a role with the same name, color, permissions, etc. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;clonerole &lt;role&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_ROLES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;clonerole Dumbass</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="echo">
+					<span class="code">;echo</span> - Repeats a message from an id. Similar to <span class="code">quote</span>, but shows a real message instead of a fake one. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;echo &lt;message ID&gt; [channel]</span>
+					</div>
+					<br>
+					<br>
+					Message must be within the current channel, or within the channel specified.
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;echo 305889374233427968</span>
+							<br>
+							<span class="code">;echo 338454653563961346 #general</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="edits">
+					<span class="code">;edits</span> - Show the (cached) edit history of a message. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;edits &lt;message ID | user&gt; [channel]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;expose</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;edits 326122627317891074</span>
+							<br>
+							<span class="code">;edits 338454653563961346 #general</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="giveaway">
+					<span class="code">;giveaway</span> - Starts or ends a giveaway. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;giveaway [channel] [command/time/prize] [giveaway ID]</span>
+					</div>
+					<br>
+					<br>
+					Commands:<br><span class="code">[time] &lt;prize&gt;</span> - Starts a giveaway, time defaults to 1 hour. <u>_See examples._</u><br><span class="code">end [giveaway ID]</span> - Stops a giveaway and picks a winner.<br><span class="code">cancel [giveaway ID]</span> - Stops a giveaway without picking a winner.<br><span class="code">reroll [giveaway ID]</span> - Picks a new winner.<br>ending, cancelling, or rerolling without an ID picks the most recent giveaway in the channel.<br><i>See the help for <a href="https://benderbot.co/commands#mute" target="_blank">mute</a> for info on time limits.</i><br><u>Commands must be used in the same channel as the giveaway was started.</u><br>Add x[num] to the end to specify number of winners (i.e. x5 for 5 winners.)
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;giveaway 10m stupid gift card</span>
+							<br>
+							<span class="code">;giveaway steam keys x10</span>
+							<br>
+							<span class="code">;giveaway cancel</span>
+							<br>
+							<span class="code">;giveaway end 339194545533353994</span>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="mentionable">
+					<span class="code">;mentionable</span> - Sets a role as mentionable or unmentionable. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;mentionable &lt;role&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_ROLES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;ment</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;mentionable Dumbass</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="names">
+					<span class="code">;names</span> - Shows a member's username and nickname history. Only shows the last 20 unless you add <span class="code">all</span> to the end. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;names &lt;member&gt; [all]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_NICKNAMES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;names @Joe</span>
+							<br>
+							<span class="code">;names @Joe all</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="remindme">
+					<span class="code">;remindme</span> - Sets up a timer to remind you about something.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;remindme &lt;time | "list" | "remove"&gt; [reminder | index]</span>
+					</div>
+					<br>
+					<br>
+					You will be sent a DM as a reminder, so don't disable DM's or you'll forget something :)<br>Time limits in minutes, hours, days, or weeks. You may have up to 20 active reminders.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;remind</span>, <span class="code">;rmd</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;remindme 2d go to rehab</span>
+							<br>
+							<span class="code">;remindme 69m make memes</span>
+							<br>
+							<span class="code">;remind list</span>
+							<br>
+							<span class="code">;remind remove 3</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="roleme">
+					<span class="code">;roleme</span> - Add a role to/remove a role from yourself, if it's been marked as joinable. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;roleme &lt;role | "list"&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;iam</span>, <span class="code">;joinrole</span>, <span class="code">;iamnot</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;iam weeb</span>
+							<br>
+							<span class="code">;roleme list</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="tag">
+					<span class="code">;tag</span> - Add, edit, view, or delete a tag ("custom command"), or list all tags, for the server. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;tag &lt;name | "list"&gt; [content | "delete"]</span>
+					</div>
+					<br>
+					<br>
+					Use "quotation marks" to use spaces in tag names, e.g. "rule #4".<br>You can use <span class="code">{mention}</span> to echo the first mentioned user in the message using the tag, if applicable.<br>Or, use <span class="code">{mention.tag}</span> for their Discord tag (no mention) or <span class="code">{mention.id}</span> for their ID.<br>The variable <span class="code">{args}</span> can be used to repeat the user's message...<br>For example, creating a tag with <span class="code">tag gay {args} is gay</span> then typing <span class="code">gay Joe</span> would produce <span class="code">Joe is gay</span>.<br>The variable <span class="code">{author}</span> can be used to repeat the person who sent the tag message.<br>The variables <span class="code">{author.tag}</span> and <span class="code">{author.id}</span> work the same way as the mention variables above.<br>For example, if a tag is made with <span class="code">tag banme {author} has been banned.</span> and <span class="code">fred</span> uses the tag, it will say <span class="code">@fred has been banned.</span><br><span class="code">{p}</span> can be used to show the current command prefix, i.e. <span class="code">{p}ban</span> might produce <span class="code">;ban</span> and then <span class="code">!ban</span> after changing the prefix.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;tag ayy lmao</span>
+							<br>
+							<span class="code">;tag "demote me" <b><i>You have been demoted.</i></b> 👋</span>
+							<br>
+							<span class="code">;tag bam delete</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mod" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="ban">
+					<span class="code">;ban</span> - Self-explanatory. Bans a member from the server because you're too lazy to do it manually. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;ban &lt;user&gt; [reason]</span>
+					</div>
+					<br>
+					<br>
+					Add a time, between 0 and 7 days, at the end to remove messages.<br>Default 7 days if reason and time are not provided.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">BAN_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;ban @Joe</span>
+							<br>
+							<span class="code">;ban @Joe being gay</span>
+							<br>
+							<span class="code">;ban @billy spammer 7d</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="case">
+					<span class="code">;case</span> - Get info about a mod-logging case, or list mod log entries for a user. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;case &lt;case # or user&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">KICK_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;modlogs</span>, <span class="code">;logs</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;case 69</span>
+							<br>
+							<span class="code">;modlogs @Joe</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="fix">
+					<span class="code">;fix</span> - Makes a user taggable if they've been offline too long and aren't cached. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;fix &lt;member&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_NICKNAMES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;cachefix</span>
+					</div>
+				</div>
+				<div class="command box" id="kick">
+					<span class="code">;kick</span> - Kick a member from the server. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;kick &lt;member&gt; [reason]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">KICK_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;kick @Joe</span>
+							<br>
+							<span class="code">;kick @Joe make a better bot you lazy ass</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="mute">
+					<span class="code">;mute</span> - Mutes a member from typing in any channel that the "Muted" role restricts. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;mute &lt;member&gt; [time] [reason]</span>
+					</div>
+					<br>
+					<br>
+					A "Muted" role will need to be set up - see <span class="code">muterole</span> in the help for <a href="https://benderbot.co/commands#config" target="_blank">config</a>.<br><b>Permissions required:</b> <u>Manage messages</u> + have a higher role than the person you're muting.<br><b>Time limits accepted:</b> minutes (<span class="code">m</span>/<span class="code">min</span>/<span class="code">mins</span>/<span class="code">minutes</span>), hours (<span class="code">h</span>/<span class="code">hr</span>/<span class="code">hrs</span>/<span class="code">hours</span>), and days (<span class="code">d</span>/<span class="code">days</span>.)
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;mute 246107833295175681</span>
+							<br>
+							<span class="code">;mute @Joe 2h</span>
+							<br>
+							<span class="code">;mute @Joe being a dumbass</span>
+							<br>
+							<span class="code">;mute Joe 40min read the rules</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="mutelist">
+					<span class="code">;mutelist</span> - Lists muted members, time left, and reason. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="nick">
+					<span class="code">;nick</span> - Sets or removes a member's nickname. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;nick &lt;member&gt; [nickname]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_NICKNAMES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;setnick</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;nick @Joe Dumbass</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="purge">
+					<span class="code">;purge</span> - Deletes a specified number of messages in the channel. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;purge &lt;# of messages&gt; [filter]</span>
+					</div>
+					<br>
+					<br>
+					Number of messages must be between 2 and 1000 (inclusive.)<br>The filter searches within the range of messages. (e.g. <span class="code">purge 1000 images</span> will purge all images within the last 1000 messages.)<br>Due to a limitation of Discord, messages older than 14 days will not be deleted.<br><br><b><u>All available filters</u></b><br><b>invites</b> - Discord invite links<br><b><span class="code">@user</span> | user ID</b> - Sent by <span class="code">user</span> | <b>me</b> - Purge only your own messages<br><b>match <span class="code">regex</span></b> | <b>not <span class="code">regex</span></b> -  Content matches/doesn't match <span class="code">regex</span>. <b><br></b>bots** | <b>humans</b> - Sent by bot/non-bot users<br><b>images</b> - Contains images as an attachment or embed<br><b>embeds</b> - Contains a "rich" embed (not link embeds ~ rich embeds can only be generated by bots and selfbots)<br><b>emotes</b> - Contains <i>custom</i> emotes (uploaded to Discord, not Unicode emoji)<br><b>before: <span class="code">&lt;id&gt;</span></b> - Only searches for messages before the one specified.<br><b>pins</b> - include pinned messages (excluded by default.)<br><br><i>NOTICE! Filters can be mixed and matched, so be careful not to include any extra text in the command, as it might trigger other filters.</i><br><i>* <span class="code">regex</span> = Regular expression. Special character reference can be found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#character-classes" target="_blank">on MDN.</a><br></i>To select messages that start with <span class="code">text</span>, use <span class="code">match ^text</span>, and for ending with <span class="code">text</span>, use <span class="code">match text$</span>.*
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;prune</span>, <span class="code">;delete</span>, <span class="code">;del</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;purge 20</span>
+							<br>
+							<span class="code">;purge 100 links</span>
+							<br>
+							<span class="code">;prune 1000 images</span>
+							<br>
+							<span class="code">;del 50 @Joe</span>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="reason">
+					<span class="code">;reason</span> - Edit the reason for a mod-logging case. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;reason &lt;case #&gt; <reason></span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">KICK_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;reason 69 you suck, billy</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="role">
+					<span class="code">;role</span> - Adds or removes a role from a member, with an optional time limit. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;role &lt;member&gt; <role> [time]</span>
+					</div>
+					<br>
+					<br>
+					If you specify a time limit, the role will be reapplied if the user rejoins the server.<br>You will also be able to see details on it using <span class="code">temproles</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_ROLES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;role @Joe Dumbass</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="softban">
+					<span class="code">;softban</span> - Bans then unbans a user, effectively kicking them and deleting their messages from the past week. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;softban &lt;member&gt; <reason></span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">BAN_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;softban @Joe</span>
+							<br>
+							<span class="code">;softban @Joe posting really shitty memes</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="temproles">
+					<span class="code">;temproles</span> - Shows details on roles applied using <span class="code">role</span> with a time limit. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;temproles &lt;member | role&gt;</span>
+					</div>
+					<br>
+					<br>
+					Shows the members whom have a certain temporary role, or which temporary roles a certain member has.<br>Also shows the user that issued said role, the date it was issued, and the remaining time.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_ROLES</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="unban">
+					<span class="code">;unban</span> - Unbans a user from the server. Use an ID or an ID mention. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;unban &lt;user&gt; [reason]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">BAN_MEMBERS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;unban 246107833295175681 This was not the droid I was looking for.</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="unmute">
+					<span class="code">;unmute</span> - Unmutes a member (removes muted role.) <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;unmute &lt;member&gt; [reason]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;unmute @normie</span>
+							<br>
+							<span class="code">;unmute @Joe meant to ban billy instead, sorry</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="warn">
+					<span class="code">;warn</span> - Warns a user to do or not do do something. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;warn &lt;member&gt; [reason]</span>
+					</div>
+					<br>
+					<br>
+					If the user has DM's disabled, it will mention them in the current channel.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;warn @Joe posting bad memes</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="music" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="clear">
+					<span class="code">;clear</span> - Removes all songs in queue, or ones within the specified range, or ones requested by the specified member. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;clear [range | user]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;clear 5-9</span>
+							<br>
+							<span class="code">;clear @Joe</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="forward">
+					<span class="code">;forward</span> - Jumps forward in the current track. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;forward &lt;# of seconds | duration&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;ff</span>, <span class="code">;fastforward</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;ff 20</span>
+							<br>
+							<span class="code">;forward 1:20</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="nowplaying">
+					<span class="code">;nowplaying</span> - Shows details about the song playing right now. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;np</span>
+					</div>
+				</div>
+				<div class="command box" id="pause">
+					<span class="code">;pause</span> - Temporarily stops music playback. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="play">
+					<span class="code">;play</span> - Plays a song from YouTube. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;play &lt;link or search query&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;p</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;play Van Halen - Dreams</span>
+							<br>
+							<span class="code">;play https://youtu.be/dQw4w9WgXcQ</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="queue">
+					<span class="code">;queue</span> - Shows songs queued to play. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;q</span>
+					</div>
+				</div>
+				<div class="command box" id="remove">
+					<span class="code">;remove</span> - Removes a song from the queue. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;remove &lt;index or song title&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;rmv</span>, <span class="code">;rm</span>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="replace">
+					<span class="code">;replace</span> - Skip the current song and play a new one in its place. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;replace &lt;link or search query&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;replace https://youtu.be/dQw4w9WgXcQ</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="resume">
+					<span class="code">;resume</span> - Resumes music playback. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="reverse">
+					<span class="code">;reverse</span> - Puts all songs in the queue, or within the specified range of the queue, in random order. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;reverse [range]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;shf</span>, <span class="code">;randomize</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;reverse 5-9</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="seek">
+					<span class="code">;seek</span> - Jumps to a certain part of a YouTube track. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;seek &lt;# of seconds | position&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;seek 20</span>
+							<br>
+							<span class="code">;seek 1:20</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="shuffle">
+					<span class="code">;shuffle</span> - Puts all songs in the queue, or within the specified range of the queue, in random order. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;shuffle [range]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;shf</span>, <span class="code">;randomize</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;shuffle</span>
+							<br>
+							<span class="code">;randomize 5-9</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="skip">
+					<span class="code">;skip</span> - Skip the current song. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+				</div>
+				<div class="command box" id="stop">
+					<span class="code">;stop</span> - Stops all music playing. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">DJ</span>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+		<div id="settings" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="alias">
+					<span class="code">;alias</span> - Sets an alias for the specified command, lists aliases for a command, or deletes an alias. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;alias [command | "delete"] [alias]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;alias mute shutup</span>
+							<br>
+							<span class="code">;alias ban</span>
+							<br>
+							<span class="code">;alias delete shutup</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="automod">
+					<span class="code">;automod</span> - Change automod settings. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;automod [setting] [value]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings</u></b><br><b>enable</b>/<b>disable</b> - Self-explanatory; enables or disables automod entirely.<br><b>no-invite</b> <span class="code">true</span>|<span class="code">false</span> - Set to <span class="code">true</span>/<span class="code">enable</span> to disallow invites being posted.<br><b>selfbot</b> - <span class="code">true</span>|<span class="code">false</span> - Whether to allow selfbots. Disallowed by default, set to <span class="code">true</span> to allow them.<br><b>mentions</b> - Maximum number of mentions in a message. More than this will result in the message deleted and a warning. 0 to disable.<br><b>mention-ban</b> - Maximum number of mentions in a message before automatically banning the user. Default is 20. 0 to disable.<br><b>spam</b> - Configure quick message spam protection, with the format <span class="code"># messages</span>/<span class="code">time</span>. More details in examples. Default is 6 messages/5 seconds.<br><b>mute</b> - Configure automute, with the format <span class="code"># violations</span>/<span class="code">time</span>. More details in examples. Default is 3 violations/1 min.<br><br>NOTE: <span class="code">ignore</span> and <span class="code">ignore-ch</span> have been moved to the <span class="code">ignore</span> command.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;automod no-invite enable</span>
+							<br>
+							<span class="code">;automod mentions 10</span>
+							<br>
+							<span class="code">;automod mute 4/30sec</span>
+							<br>
+							<span class="code">;automod spam 5/3sec</span>
+							<br>
+							<span class="code">;automod spam 3/800ms</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="autorole">
+					<span class="code">;autorole</span> - Set or display the current autorole.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;autorole [role | "none"]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">config autorole</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;autorole none</span>
+							<br>
+							<span class="code">;autorole Member</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="config">
+					<span class="code">;config</span> - Changes server settings, such as welcome/leave messages, and settings for moderation commands. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;config &lt;setting&gt; [value]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings:</u></b><br><i>Setting any of the settings to "none" will delete the value instead of using the text "none".</i><br><b>muterole</b> - The role with which members are muted.<br><b>filter<span class="code">1/2/3</span></b> - Action to take after <span class="code">x</span> filter violations - "warn", "mute", "kick", or "ban"<br><b>disabled-msgs</b> - Toggle whether to reply with <span class="code">The &lt;command&gt; command is disabled.</span> when applicable<br><b>perm-msgs</b> - Toggle whether to reply with <span class="code">🔥 You do not have permission to use &lt;command&gt;.</span> when applicable<br><b>reset</b> - <i>Reset <b>ALL</b> settings</i>, including things like mutes, name history, and giveaways.<br><b>autorole</b> - The role that all members are given when they join the server OR after they <span class="code">agree</span>, if applicable.<br><b>timezone</b> - Timezone in which to format dates in the server. Searches location or accepts GMT offset in the format <span class="code">±####</span>, e.g. <span class="code">+0500</span>.<br><b>reply-dm</b> - Whether to reply in DM if Bender doesn't have perms to post in that channel.<br><b>mutetime</b> - Set default mute time (otherwise 30 minutes.)
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;config muterole @Muted</span>
+							<br>
+							<span class="code">;config filter2 mute</span>
+							<br>
+							<span class="code">;config timezone Dallas</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="cperms">
+					<span class="code">;cperms</span> - Sets who has permissions to use which commands in a specific channel. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;cperms [channel] &lt;command | group | "use_tags"&gt; [role | discord permission | "default"]</span>
+					</div>
+					<br>
+					<br>
+					Identical to the <span class="code">perms</span> command, other than the optional channel argument. More info in <span class="code">help perms</span> or on <a href="https://benderbot.co/commands#perms" target="_blank">the website</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;channelperms</span>, <span class="code">;chanperms</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;cperms #general pong @Active</span>
+							<br>
+							<span class="code">;cperms ping Moderator+</span>
+							<br>
+							<span class="code">;cperms #bot_commands mod ban_members</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="filter">
+					<span class="code">;filter</span> - Add and remove words from a filter (using regex), for which you can configure actions upon violations. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;filter &lt;"add"|"remove"|"enable"|"disable"|"warnlist"|"message"&gt; [word/phrase if applicable]</span>
+					</div>
+					<br>
+					<br>
+					The filter will ignore any members ignored by automod (set with <span class="code">automod ignore</span>.)<br>To change filter actions, use <span class="code">config filter# action</span>, e.g. <span class="code">config filter2 mute</span>.<br>Case and markdown characters are ignored. More info on <a href="https://benderbot.co/commands#config" target="_blank">the website</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;filter add heck</span>
+							<br>
+							<span class="code">;filter disable</span>
+							<br>
+							<span class="code">;filter warnlist</span>
+							<br>
+							<span class="code">;filter message vulgar language</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="ignore">
+					<span class="code">;ignore</span> - Configure who is/which channels are excluded from automod settings, such as sending invites or using selfbots. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;ignore [setting] [value]</span>
+					</div>
+					<br>
+					<br>
+					Note: Use <span class="code">ignore [setting] none</span> to ignore no members, and <span class="code">ignore [setting] no-ch</span> to ignore no channels<br><b><u>Available settings</u></b><br><b>automod</b> - Channels, or role/discord permission of members, to ignore for <b>all</b> automod functions. <b>This overrides all of the settings below.</b><br><b>invites</b> - Same as above, but only for the <span class="code">no-invite</span> automod settings. (Allows members/channels to post invites.)<br><b>selfbots</b> - Allow channels/members to use selfbots.<br><b>mentions</b> - Allow channels/members to mention any number of members.<br><b>spam</b> - Disable spam protection (sending messages too quickly) in a channel or for certain members.<br><b>filter</b> - Bypass the filter (set with the <span class="code">filter</span> command) in a channel or for certain members.<br><b>names</b> - Allows members with a certain discord permission/roles to use names that are disallowed by the <span class="code">namefilter</span> command.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;ignore automod #spam</span>
+							<br>
+							<span class="code">;ignore invites @Moderator+</span>
+							<br>
+							<span class="code">;ignore spam #spam</span>
+							<br>
+							<span class="code">;ignore filter manage_messages</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="joinable">
+					<span class="code">;joinable</span> - Makes a role available for users to assign to themselves using <span class="code">roleme</span>. <b>"Types":</b>
+Use <span class="code">j</span> for <b>only</b> joinable, <span class="code">l</span> for <b>only</b> leavable, or <span class="code">jl</span> for both (default.)
+Use <span class="code">none</span> to explicitly disable. Default behavior is to toggle between "none" and "both". <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;joinable &lt;role&gt; [type]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;joinable Dumbass</span>
+							<br>
+							<span class="code">;joinable gay j</span>
+							<br>
+							<span class="code">;joinable moderator none</span>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="log">
+					<span class="code">;log</span> - Changes logging settings, e.g. what channel to log actions in and which commands to log. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;log [setting] [value]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings:</u></b><br><b>channel</b> - The channel in which moderation actions are logged, if they're enabled.<br>​   <i>(Setting the channel to "none" will stop logging all actions.)</i><br><b>cases</b> - Whether to associate a case with each moderation action, and be able to retrieve and edit details<br><b>ban</b> - Use of the <span class="code">ban</span> command and automatic bans, e.g. from <span class="code">namefilter</span>.<br><b>mute</b> - Use of the <span class="code">mute</span> command or automatic mutes, e.g. from <span class="code">filter</span>.<br><b>unmute</b> - Use of the <span class="code">unmute</span> command or automatic unmutes (times out.)<br><b>role</b> | <b>purge</b> | <b>unban</b> | <b>warn</b> | <b>clonerole</b> - Use of the commands, respectively.<br><i>--- The settings above are enabled by default. The settings below are not. ---</i><br><b>deleted</b> - Logs any message being deleted, except in the logging channel.<br><b>edited</b> - Logs all messages being edited, except ones posted by bots.<br><b>commands</b> - Logs the usage of all commands in channels in which Bender has permission to type.<br><br>Except for <span class="code">channel</span>, all settings accept only the values <span class="code">true</span>/<span class="code">enable</span> and <span class="code">false</span>/<span class="code">disable</span>.<br>If you omit the value, the status of the logging for that command will be returned.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;log channel #bot_log</span>
+							<br>
+							<span class="code">;log kick true</span>
+							<br>
+							<span class="code">;log commands enable</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="muterole">
+					<span class="code">;muterole</span> - Set or display the current mute role.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;muterole [role | "none"]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">config muterole</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;muterole none</span>
+							<br>
+							<span class="code">;muterole Muted</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="namefilter">
+					<span class="code">;namefilter</span> - Add and remove words from a filter (using regex), which auto-bans any users in violation. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;namefilter ["add"|"remove"|"enable"|"disable"] [regex pattern]</span>
+					</div>
+					<br>
+					<br>
+					If you haven't used regex before, take a look at the syntax <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">here</a>.<br>Expressions are case-insensitive and multiline by default, and you don't need to include the slashes here.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;namefilter add heck</span>
+							<br>
+							<span class="code">;namefilter disable</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="perms">
+					<span class="code">;perms</span> - Sets who has permissions to use which commands. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;perms &lt;command/group name | "use_tags"&gt; [role | discord permission | "default"]</span>
+					</div>
+					<br>
+					<br>
+					"Discord permission" refers to an item on <a href="https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS" target="_blank">this list</a>. It's generally the same names as the UI, with underscores instead of spaces.<br>Any permissions set here will override the defaults; individual command permissions override group permissions as well.<br>You can use <span class="code">@everyone</span> or <span class="code">everyone</span> to make a command available to all members.<br>To view the permissions for a command, just omit the second argument.<br><b>Append <span class="code">+</span> to the end of a role name to make the perms hierarchal (the __ role and above.)</b> Otherwise it will be limited to members that explicitly have the specified role.<br><span class="code">use_tags</span> is a special permission determining who can use the "custom commands" created by the <span class="code">tag</span> command.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;perms pong shitposter</span>
+							<br>
+							<span class="code">;perms ping Moderator+</span>
+							<br>
+							<span class="code">;perms mod ban_members</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="setup">
+					<span class="code">;setup</span> - Simplifies server configuration by automating things. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;setup [setting]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings:</u></b><br><b>mute</b> - Creates a "Muted" role and saves it as the <span class="code">;config muterole</span>.<br><b>log</b> - Find or create a log channel and set default logging settings.<br><strike><b>automod</b> - Enable recommended automod settings.~~<br><b>time</b> - Automatically assign the server a timezone (used for formatting dates) based on voice region.<br>~~<b>all</b> - Does all of the above.~~<br>~~<b>agreement</b> - Find or create a TOS/rules channel, find or ceate an agreement role, and enable the system with default settings.~~<br>~~<b>cmdchannel [channel]</b> - Set the pemissions and channel-specific permissions such that commands can only be used in a certain channel.</strike><br><i>Crossed-out settings are still in development/coming soon™</i>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;setup mute</span>
+							<br>
+							<span class="code">;setup cmdchannel #bot_spam</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="timezone">
+					<span class="code">;timezone</span> - Set or display the current timezone.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;timezone [location | GMT offset | "reset"]</span>
+					</div>
+					<br>
+					<br>
+					Acts as a shortcut for <span class="code">config timezone</span>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;time</span>, <span class="code">;tz</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;timezone</span>
+							<br>
+							<span class="code">;timezone London</span>
+							<br>
+							<span class="code">;timezone reset</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="welcome">
+					<span class="code">;welcome</span> - Configure the messages that can be sent when users join and leave the server. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;welcome &lt;setting&gt; [value]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings:</u></b><br><i>Setting any of the settings to "none" will delete the value instead of using the text "none".</i><br><b>channel</b> - The channel in which the following messages are sent:<br><b>message</b> - The message to be posted when a user joins the server.<br><b>dm</b> - A message to be sent to the user's PM when they join the server. <i>note: if they have DMs enabked it will mention them in the welcome channel then delete the message after 30 seconds</i><br><b>leave-msg</b> - Message to be posted when a user leaves the server.<br><b>ban-msg</b> - When a user is banned, post this, blah blah blah...<br><br><b><u>Values that can be used in <span class="code">join/leave/ban</span> messages:</u></b><br><span class="code">{id}</span> - The member's ID. 				<span class="code">{user}</span> - Shows a user's "tag", e.g. <span class="code">Joe 🎸#7070</span>.<br><span class="code">{member}</span> - Mentions the server member (recommended only for the join message, as ban/leave mentions will turn into ID's shortly after the user is gone.)<br><span class="code">{server}</span> - The name of the server.		<span class="code">{count}</span> - The number of server members.<br><b><u>Values only available in join messages:</u></b><br><span class="code">{today}</span> - Number of members gained today.		<span class="code">{thisweek}</span> Number of members gained this week.<br><span class="code">{new}</span> - Shows when the user's account was created, if it was less than 2 days ago.<br><u>Note:</u> adding <span class="code">th</span> to the end of <span class="code">{count}</span>, <span class="code">{today}</span>, or <span class="code">{thisweek}</span> will properly format the number; For example, <span class="code">{count}th member</span> would produce "2nd member", "23rd member", "55th member" etc.
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;welcome channel #members</span>
+							<br>
+							<span class="code">;welcome ban-msg <b>{user} got their dumb ass banned!</b></span>
+							<br>
+							<span class="code">;welcome dm <b>Welcome {member},</b> read the fuckin #rules and enjoy your stay! :3</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="text-tools" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="big">
+					<span class="code">;big</span> - Converts text to 🇪 🇲 🇴 🇯 🇮 🇸.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;big &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;big gg</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="bubble">
+					<span class="code">;bubble</span> - Converts text to bubbled letters.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;bubble &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					Works with all uppercase and lowercase letters as well as numbers.
+					<br>
+				</div>
+				<div class="command box" id="charinfo">
+					<span class="code">;charinfo</span> - Gets information about a Unicode character.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;charinfo &lt;character&gt;</span>
+					</div>
+					<br>
+					<br>
+					Only gets info on the first character. Supports Unicode emojis and skin tones, etc.<br>Use "quotes" around whitespace characters if you want to get info on one.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;char</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;char 🤔</span>
+							<br>
+							<span class="code">;char " "</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="distort">
+					<span class="code">;distort</span> - Converts text to ｆｕｌｌｗｉｄｔｈ.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;distort &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;fullwidth</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;distort Aesthetic</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="findchar">
+					<span class="code">;findchar</span> - Finds a Unicode character and displays some info on it.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;findchar &lt;query&gt;</span>
+					</div>
+					<br>
+					<br>
+					To include Chinese characters, append 🇨🇳, <span class="code">han</span>, or <span class="code">chinese</span> to the end of the search term.<br>Searches both character name and Unicode block.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;charsearch</span>, <span class="code">;cs</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;findchar thinking face</span>
+							<br>
+							<span class="code">;cs noose han</span>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="flip">
+					<span class="code">;flip</span> - Flips (or unflips) text or a user.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;flip &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;flip some random text</span>
+							<br>
+							<span class="code">;flip @user</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="smallcaps">
+					<span class="code">;smallcaps</span> - Converts text to Sᴍᴀʟʟ Cᴀᴘs.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;smallcaps &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;shrink</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;smallcaps Nice Meme</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="sub">
+					<span class="code">;sub</span> - Converts text to subscript ₍ₑₓₐₘₚₗₑ ₕₑᵣₑ₎.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;sub &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;subscript</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;sub nice meme</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="super">
+					<span class="code">;super</span> - Converts text to ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;super &lt;text&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;sup</span>, <span class="code">;superscript</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;super ✓verified</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="textcase">
+					<span class="code">;textcase</span> - Converts text to lowercase, UPPERCASE, etc.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;textcase &lt;command&gt; <text></span>
+					</div>
+					<br>
+					<br>
+					<span class="code">lower</span> - lowercase<br><span class="code">upper</span> - UPPERCASE<br><span class="code">alt</span> - AlTeRnAtInG cAsE<br><span class="code">title</span> - Title Case<br><span class="code">switch</span> - reverses the current case; tHIs =&gt; ThiS
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;tcase</span>, <span class="code">;convertcase</span>, <span class="code">;changecase</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;tcase upper whoa there</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="util" class="columns group hidden">
+			<div class="column">
+				<div class="command box" id="disable">
+					<span class="code">;disable</span> - Disables a command or command group. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;disable &lt;command | group&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;disable fun</span>
+							<br>
+							<span class="code">;disable util</span>
+							<br>
+							<span class="code">;disable ping</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="enable">
+					<span class="code">;enable</span> - Enables a command or command group. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;enable &lt;command | group&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;enable fun</span>
+							<br>
+							<span class="code">;enable util</span>
+							<br>
+							<span class="code">;enable ping</span>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="command box" id="help">
+					<span class="code">;help</span> - Lists commands or shows info about a specified command.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;help [command]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;commands</span>, <span class="code">;cmds</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;help</span>
+							<br>
+							<span class="code">;help prefix</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="ping">
+					<span class="code">;ping</span> - Gets bot ping in milliseconds.
+					<br>
+					Is the bot online? Is it on shitty internet? If not for this command, the world may have never known.
+					<br>
+				</div>
+				<div class="command box" id="prefix">
+					<span class="code">;prefix</span> - Shows or sets the command prefix.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;prefix [prefix | "default"]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;prefix</span>
+							<br>
+							<span class="code">;prefix $</span>
+							<br>
+							<span class="code">;prefix default</span>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./cmds-v2.0.1.js"></script>
+	<!-- Generated at Thu May 17 2018 15:20:25 GMT+0000 (UTC) -->
+</body>
+</html>

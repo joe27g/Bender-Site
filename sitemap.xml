@@ -1,0 +1,23 @@
+<!-- badly made sitemap, lul -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://benderbot.co/</loc>
+<lastmod>2018-02-08T19:00:44+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://benderbot.co/features/</loc>
+<lastmod>2018-02-08T18:40:43+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://benderbot.co/commands/</loc>
+<lastmod>2018-02-08T18:20:43+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://benderbot.co/donate/</loc>
+<lastmod>2018-02-08T10:46:46+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+</urlset>
