@@ -227,6 +227,9 @@ span.discrim {
     margin: 15px;
 }
 
+.method {
+    margin-bottom: 20px;
+}
 .method-title {
     padding: 5px;
     border-bottom: 3px solid #666;
@@ -234,13 +237,11 @@ span.discrim {
     display: block;
     color: #fff !important;
 }
-
 .method-icon {
     height: 25px;
     vertical-align: middle;
     margin-right: 5px;
 }
-
 .method-link {
     height: 20px;
     float: right;
@@ -279,4 +280,14 @@ ul.tos-list {
     border-radius:  5px;
     margin:  3px;
     padding: 3px;
+}
+#donate li:not(:first-of-type):before {
+    content: "";
+    width: 80%;
+    height: 3px;
+    display: block;
+    margin: 8px auto 5px auto;
+    background-image: -webkit-linear-gradient(left, transparent, rgba(255, 255, 255, 0.15), transparent);
+    background-image: -moz-linear-gradient(left, transparent, rgba(255, 255, 255, 0.15), transparent);
+    background-image: -o-linear-gradient(left, transparent, rgba(255, 255, 255, 0.15), transparent);
 }
