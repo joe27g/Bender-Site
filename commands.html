@@ -5,16 +5,16 @@
 	<title>Bender Commands</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#FF0000">
+	<meta name="theme-color" content="#0050C5">
 	<meta name="keywords" content="Discord, Bot, Bender, Best, Discord Bot, benderbot, Commands">
 	<meta name="og:title" content="Bender Commands" />
-	<meta name="og:description" content="Documentation and usage examples of all of Bender's commands. There are over 70 and more to come :3" />
-	<meta name="description" content="Documentation and usage examples of all of Bender's commands. There are over 70 and more to come :3" />
+	<meta name="og:description" content="Documentation and usage examples of all of Bender's commands. There are over 100 and more to come :3" />
+	<meta name="description" content="Documentation and usage examples of all of Bender's commands. There are over 100 and more to come :3" />
 	<meta name="og:image" content="https://benderbot.co/Bender-large.png" />
 	<meta name="og:site_name" content="Bender Bot">
 	<meta name="og:url" content="https://benderbot.co">
-	<link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/darkly/bulmaswatch.min.css">
-	<link rel="stylesheet" href="../style-v2.0.2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
+	<link rel="stylesheet" href="../style-v2.0.6.css">
 	<script type="application/ld+json" id="google-breadcrumbs">
 	{
 	  "@context": "http://schema.org",
@@ -36,6 +36,22 @@
 	  }]
 	}
 	</script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2080177319627563",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126650650-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-126650650-1');
+	</script>
 </head>
 <body>
 	<section id="header-wrapper">
@@ -47,7 +63,7 @@
         <div id="header" class="hero">
             <div class="hero-head">
                 <div class="level">
-                    <div class="level-left">Syntax and usage for all commands - See the feature overview&nbsp;<a href="../features">here</a>.
+                    <div class="level-left">Syntax and usage for all commands - See the feature overview&nbsp;<a href="../">on the homepage</a>.
                     </div>
                     <div class="level-right">Join the support server!
                         <a href="https://discord.gg/99xaeGn" class="discord">
@@ -179,6 +195,8 @@
 						<br>
 					</div>
 				</div>
+			</div>
+			<div class="column">
 				<div class="command box" id="pong">
 					<span class="code">;pong</span> - You'll see...
 					<br>
@@ -213,7 +231,7 @@
 					<br>
 					<div class="usage">
 						<span class="category">Aliases: </span>
-						<span class="code">;rng</span>
+						<span class="code">;rng</span>, <span class="code">;rand</span>
 					</div>
 				</div>
 				<div class="command box" id="roll">
@@ -314,30 +332,6 @@
 					</div>
 					<br>
 				</div>
-				<div class="command box" id="charinfo">
-					<span class="code">;charinfo</span> - Gets information about a Unicode character.
-					<br>
-					<div class="usage">
-						<span class="category">Usage:</span> <span class="code">;charinfo &lt;character&gt;</span>
-					</div>
-					<br>
-					<br>
-					Only gets info on the first character. Supports Unicode emojis and skin tones, etc.<br>Use "quotes" around whitespace characters if you want to get info on one.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
-					<br>
-					<div class="usage">
-						<span class="category">Aliases: </span>
-						<span class="code">;char</span>
-					</div>
-					<div class="usage">
-						<span class="category">Examples:</span>
-					</div>
-					<div class="usage right">
-						<span class="code">;char 🤔</span>
-							<br>
-							<span class="code">;char " "</span>
-						<br>
-					</div>
-				</div>
 				<div class="command box" id="discrim">
 					<span class="code">;discrim</span> - Gets a list of users with the same discrim as you, or the one specified.
 					<br>
@@ -376,7 +370,7 @@
 					</div>
 					<br>
 					<br>
-					If the emoji is not in the current server, Bender will search in all of its servers.
+					If the emoji is not in the current server, Bender will search in all of its servers.<br>Note that you must use this command in a NSFW channel or DM to search, because some servers have NSFW emotes.
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">EMBED_LINKS</span>
@@ -393,30 +387,6 @@
 						<span class="code">;emoji :PartyWumpus:</span>
 							<br>
 							<span class="code">;emote PogChamp</span>
-						<br>
-					</div>
-				</div>
-				<div class="command box" id="findchar">
-					<span class="code">;findchar</span> - Finds a Unicode character and displays some info on it.
-					<br>
-					<div class="usage">
-						<span class="category">Usage:</span> <span class="code">;findchar &lt;query&gt;</span>
-					</div>
-					<br>
-					<br>
-					To include Chinese characters, append 🇨🇳, <span class="code">han</span>, or <span class="code">chinese</span> to the end of the search term.<br>Searches both character name and Unicode block.<br>All info © 1991-2017 Unicode, Inc. and obtained from <a href="http://www.fileformat.info/info/unicode/index.htm" target="_blank">fileformat.info</a>.
-					<br>
-					<div class="usage">
-						<span class="category">Aliases: </span>
-						<span class="code">;charsearch</span>, <span class="code">;cs</span>
-					</div>
-					<div class="usage">
-						<span class="category">Examples:</span>
-					</div>
-					<div class="usage right">
-						<span class="code">;findchar thinking face</span>
-							<br>
-							<span class="code">;cs noose han</span>
 						<br>
 					</div>
 				</div>
@@ -532,28 +502,12 @@
 						<span class="code">;server</span>, <span class="code">;sinfo</span>, <span class="code">;guildinfo</span>, <span class="code">;guild</span>, <span class="code">;ginfo</span>
 					</div>
 				</div>
-				<div class="command box" id="shard">
-					<span class="code">;shard</span> - Shows info about the bot's shards.
-					<br>
-					<div class="usage">
-						<span class="category">Aliases: </span>
-						<span class="code">;shardstats</span>, <span class="code">;shardinfo</span>
-					</div>
-				</div>
 				<div class="command box" id="stats">
 					<span class="code">;stats</span> - Gets information about the server's members. <span class="gray">(Guild-only command)</span>
 					<br>
 					<div class="usage">
 						<span class="category">Aliases: </span>
 						<span class="code">;membercount</span>, <span class="code">;mstats</span>, <span class="code">;mcount</span>
-					</div>
-				</div>
-				<div class="command box" id="status">
-					<span class="code">;status</span> - Gets technical info about the bot and other things.
-					<br>
-					<div class="usage">
-						<span class="category">Aliases: </span>
-						<span class="code">;uptime</span>, <span class="code">;botstats</span>, <span class="code">;bstats</span>
 					</div>
 				</div>
 				<div class="command box" id="userinfo">
@@ -636,6 +590,52 @@
 						<br>
 					</div>
 				</div>
+				<div class="command box" id="createemoji">
+					<span class="code">;createemoji</span> - Create an emoji from the specified url. Optionally, under a specific name. You can also use an attachment instead of an image URL. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;createemoji &lt;url&gt; [name]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_EMOJIS</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;em</span>, <span class="code">;emotify</span>, <span class="code">;emojify</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;emojify https://i.imgur.com/w3duR07.png rip</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="deleted">
+					<span class="code">;deleted</span> - Shows the content of a deleted message. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;deleted [message ID | user] [channel]</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;undelete</span>
+					</div>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;undelete 326122627317891074</span>
+							<br>
+							<span class="code">;deleted @billy #general</span>
+						<br>
+					</div>
+				</div>
 				<div class="command box" id="echo">
 					<span class="code">;echo</span> - Repeats a message from an id. Similar to <span class="code">quote</span>, but shows a real message instead of a fake one. <span class="gray">(Guild-only command)</span>
 					<br>
@@ -708,6 +708,26 @@
 				</div>
 			</div>
 			<div class="column">
+				<div class="command box" id="joinrole">
+					<span class="code">;joinrole</span> - Add a joinable role to yourself. <span class="gray">(Guild-only command)</span>
+					<br>
+					Acts as a shortcut for <span class="code">roleme</span>, but only adds roles.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;iam</span>
+					</div>
+				</div>
+				<div class="command box" id="leaverole">
+					<span class="code">;leaverole</span> - Remove a leaveable role from yourself. <span class="gray">(Guild-only command)</span>
+					<br>
+					Acts as a shortcut for <span class="code">roleme</span>, but only removes roles.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;iamnot</span>
+					</div>
+				</div>
 				<div class="command box" id="mentionable">
 					<span class="code">;mentionable</span> - Sets a role as mentionable or unmentionable. <span class="gray">(Guild-only command)</span>
 					<br>
@@ -790,17 +810,19 @@
 					</div>
 					<br>
 					<br>
+					This command is a combination of <span class="code">joinrole</span> and <span class="code">leaverole</span> - it's a toggle based on your current roles.<br>For example, if you have the "red" role but not "green", <span class="code">roleme red</span> removes a role and <span class="code">roleme green</span> adds one.
+					<br>
 					<div class="usage">
 						<span class="category">Aliases: </span>
-						<span class="code">;iam</span>, <span class="code">;joinrole</span>, <span class="code">;iamnot</span>
+						<span class="code">;selfrole</span>
 					</div>
 					<div class="usage">
 						<span class="category">Examples:</span>
 					</div>
 					<div class="usage right">
-						<span class="code">;iam weeb</span>
+						<span class="code">;roleme weeb</span>
 							<br>
-							<span class="code">;roleme list</span>
+							<span class="code">;selfrole list</span>
 						<br>
 					</div>
 				</div>
@@ -829,6 +851,15 @@
 							<span class="code">;tag bam delete</span>
 						<br>
 					</div>
+				</div>
+				<div class="command box" id="weather">
+					<span class="code">;weather</span> - Shows weather for a certain location, or guesses based on server timezone.
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;weather [location]</span>
+					</div>
+					<br>
+					<br>
 				</div>
 			</div>
 		</div>
@@ -874,7 +905,7 @@
 					<br>
 					<div class="usage">
 						<span class="category">Aliases: </span>
-						<span class="code">;modlogs</span>, <span class="code">;logs</span>
+						<span class="code">;modlog</span>, <span class="code">;modlogs</span>, <span class="code">;logs</span>
 					</div>
 					<div class="usage">
 						<span class="category">Examples:</span>
@@ -884,23 +915,6 @@
 							<br>
 							<span class="code">;modlogs @Joe</span>
 						<br>
-					</div>
-				</div>
-				<div class="command box" id="fix">
-					<span class="code">;fix</span> - Makes a user taggable if they've been offline too long and aren't cached. <span class="gray">(Guild-only command)</span>
-					<br>
-					<div class="usage">
-						<span class="category">Usage:</span> <span class="code">;fix &lt;member&gt;</span>
-					</div>
-					<br>
-					<br>
-					<div class="usage">
-						<span class="category">Default permission:</span> <span class="code">MANAGE_NICKNAMES</span>
-					</div>
-					<br>
-					<div class="usage">
-						<span class="category">Aliases: </span>
-						<span class="code">;cachefix</span>
 					</div>
 				</div>
 				<div class="command box" id="kick">
@@ -993,7 +1007,7 @@
 					</div>
 					<br>
 					<br>
-					Number of messages must be between 2 and 1000 (inclusive.)<br>The filter searches within the range of messages. (e.g. <span class="code">purge 1000 images</span> will purge all images within the last 1000 messages.)<br>Due to a limitation of Discord, messages older than 14 days will not be deleted.<br><br><b><u>All available filters</u></b><br><b>invites</b> - Discord invite links<br><b><span class="code">@user</span> | user ID</b> - Sent by <span class="code">user</span> | <b>me</b> - Purge only your own messages<br><b>match <span class="code">regex</span></b> | <b>not <span class="code">regex</span></b> -  Content matches/doesn't match <span class="code">regex</span>. <b><br></b>bots** | <b>humans</b> - Sent by bot/non-bot users<br><b>images</b> - Contains images as an attachment or embed<br><b>embeds</b> - Contains a "rich" embed (not link embeds ~ rich embeds can only be generated by bots and selfbots)<br><b>emotes</b> - Contains <i>custom</i> emotes (uploaded to Discord, not Unicode emoji)<br><b>before: <span class="code">&lt;id&gt;</span></b> - Only searches for messages before the one specified.<br><b>pins</b> - include pinned messages (excluded by default.)<br><br><i>NOTICE! Filters can be mixed and matched, so be careful not to include any extra text in the command, as it might trigger other filters.</i><br><i>* <span class="code">regex</span> = Regular expression. Special character reference can be found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#character-classes" target="_blank">on MDN.</a><br></i>To select messages that start with <span class="code">text</span>, use <span class="code">match ^text</span>, and for ending with <span class="code">text</span>, use <span class="code">match text$</span>.*
+					Number of messages must be between 2 and 1000 (inclusive.)<br>The filter searches within the range of messages. (e.g. <span class="code">purge 1000 images</span> will purge all images within the last 1000 messages.)<br>Due to a limitation of Discord, messages older than 14 days will not be deleted.<br><br><b><u>All available filters</u></b><br><b>invites</b> - Discord invite links<br><b><span class="code">@user</span> | user ID</b> - Sent by <span class="code">user</span> | <b>me</b> - Purge only your own messages<br><b>match <span class="code">regex</span></b> | <b>not <span class="code">regex</span></b> -  Content matches/doesn't match <span class="code">regex</span>. <b><br></b>bots** | <b>humans</b> - Sent by bot/non-bot users<br><b>images</b> - Contains images as an attachment or embed<br><b>embeds</b> - Contains a "rich" embed (not link embeds ~ rich embeds can only be generated by bots and selfbots)<br><b>emotes</b> - Contains <i>custom</i> emotes (uploaded to Discord, not Unicode emoji)<br><b>before: <span class="code">&lt;id&gt;</span></b> | <b>after: <span class="code">&lt;id&gt;</span></b> - Only searches for messages before/after the one specified. [<u>Cannot be used together!</u>]<br><b>pins</b> - include pinned messages (excluded by default.)<br><br><i>NOTICE! Filters can be mixed and matched, so be careful not to include any extra text in the command, as it might trigger other filters.</i><br><i>* <span class="code">regex</span> = Regular expression. Special character reference can be found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#character-classes" target="_blank">on MDN.</a><br></i>To select messages that start with <span class="code">text</span>, use <span class="code">match ^text</span>, and for ending with <span class="code">text</span>, use <span class="code">match text$</span>.*
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
@@ -1001,7 +1015,7 @@
 					<br>
 					<div class="usage">
 						<span class="category">Aliases: </span>
-						<span class="code">;prune</span>, <span class="code">;delete</span>, <span class="code">;del</span>
+						<span class="code">;prune</span>, <span class="code">;del</span>
 					</div>
 					<div class="usage">
 						<span class="category">Examples:</span>
@@ -1017,8 +1031,6 @@
 						<br>
 					</div>
 				</div>
-			</div>
-			<div class="column">
 				<div class="command box" id="reason">
 					<span class="code">;reason</span> - Edit the reason for a mod-logging case. <span class="gray">(Guild-only command)</span>
 					<br>
@@ -1028,7 +1040,7 @@
 					<br>
 					<br>
 					<div class="usage">
-						<span class="category">Default permission:</span> <span class="code">KICK_MEMBERS</span>
+						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
 					</div>
 					<br>
 					<div class="usage">
@@ -1039,6 +1051,8 @@
 						<br>
 					</div>
 				</div>
+			</div>
+			<div class="column">
 				<div class="command box" id="role">
 					<span class="code">;role</span> - Adds or removes a role from a member, with an optional time limit. <span class="gray">(Guild-only command)</span>
 					<br>
@@ -1081,6 +1095,23 @@
 							<br>
 							<span class="code">;softban @Joe posting really shitty memes</span>
 						<br>
+					</div>
+				</div>
+				<div class="command box" id="taggable">
+					<span class="code">;taggable</span> - Makes a user taggable if they've been offline too long and aren't cached. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;taggable &lt;member&gt;</span>
+					</div>
+					<br>
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_NICKNAMES</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;fix</span>
 					</div>
 				</div>
 				<div class="command box" id="temproles">
@@ -1136,7 +1167,7 @@
 					<div class="usage right">
 						<span class="code">;unmute @normie</span>
 							<br>
-							<span class="code">;unmute @Joe meant to ban billy instead, sorry</span>
+							<span class="code">;unmute @Joe meant to mute billy instead, sorry</span>
 						<br>
 					</div>
 				</div>
@@ -1434,7 +1465,7 @@
 					<b><u>Available settings</u></b><br><b>enable</b>/<b>disable</b> - Self-explanatory; enables or disables automod entirely.<br><b>no-invite</b> <span class="code">true</span>|<span class="code">false</span> - Set to <span class="code">true</span>/<span class="code">enable</span> to disallow invites being posted.<br><b>selfbot</b> - <span class="code">true</span>|<span class="code">false</span> - Whether to allow selfbots. Disallowed by default, set to <span class="code">true</span> to allow them.<br><b>mentions</b> - Maximum number of mentions in a message. More than this will result in the message deleted and a warning. 0 to disable.<br><b>mention-ban</b> - Maximum number of mentions in a message before automatically banning the user. Default is 20. 0 to disable.<br><b>spam</b> - Configure quick message spam protection, with the format <span class="code"># messages</span>/<span class="code">time</span>. More details in examples. Default is 6 messages/5 seconds.<br><b>mute</b> - Configure automute, with the format <span class="code"># violations</span>/<span class="code">time</span>. More details in examples. Default is 3 violations/1 min.<br><br>NOTE: <span class="code">ignore</span> and <span class="code">ignore-ch</span> have been moved to the <span class="code">ignore</span> command.
 					<br>
 					<div class="usage">
-						<span class="category">Default permission:</span> <span class="code">MANAGE_MESSAGES</span>
+						<span class="category">Default permission:</span> <span class="code">MANAGE_CHANNELS</span>
 					</div>
 					<br>
 					<div class="usage">
@@ -1474,7 +1505,7 @@
 					</div>
 				</div>
 				<div class="command box" id="config">
-					<span class="code">;config</span> - Changes server settings, such as welcome/leave messages, and settings for moderation commands. <span class="gray">(Guild-only command)</span>
+					<span class="code">;config</span> - Changes server settings. <span class="gray">(Guild-only command)</span>
 					<br>
 					<div class="usage">
 						<span class="category">Usage:</span> <span class="code">;config &lt;setting&gt; [value]</span>
@@ -1507,7 +1538,7 @@
 					</div>
 					<br>
 					<br>
-					Identical to the <span class="code">perms</span> command, other than the optional channel argument. More info in <span class="code">help perms</span> or on <a href="https://benderbot.co/commands#perms" target="_blank">the website</a>.
+					Nearly identical to the <span class="code">perms</span> command, other than the optional channel argument and reset argument. You can also use "reset" to reset the permissions for a specific channel, or "reset all" to reset all channels. More info in <span class="code">help perms</span> or on <a href="https://benderbot.co/commands#perms" target="_blank">the website</a>.
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
@@ -1526,6 +1557,28 @@
 							<span class="code">;cperms ping Moderator+</span>
 							<br>
 							<span class="code">;cperms #bot_commands mod ban_members</span>
+						<br>
+					</div>
+				</div>
+				<div class="command box" id="dm">
+					<span class="code">;dm</span> - Change the DM that users receive for certain actions done by Bender. <span class="gray">(Guild-only command)</span>
+					<br>
+					<div class="usage">
+						<span class="category">Usage:</span> <span class="code">;dm &lt;setting&gt; [value]</span>
+					</div>
+					<br>
+					<br>
+					<b><u>Available settings:</u></b><br><b>ban</b> - Message to send before a user is banned from the server.<br><b>kick</b> - Message to send before a user is kicked from the server.<br><b>mute</b> - Message sent informing a user that they have been muted.<br><b>unmute</b> - Message sent informing a user that they have been unmuted, either automatically or manually.<br><br><i>Before each of these messages, there will be a notice such as "You have been kicked/muted/banned from {server}." to avoid the recipient being confused.</i><br><br><b><u>Variables:</u></b><br><span class="code">{moderator}</span> - The person issuing the kick/mute/ban, i.e. <span class="code">Wumpus#0001</span>.<br><span class="code">{reason}</span> - The reason specified for the action by the moderator.<br><span class="code">{user}</span> - The tag of the user being punished, i.e. <span class="code">nicememe#3450</span>.<br><span class="code">{server}</span> - The current name of the server/guild.<br><span class="code">{duration}</span> - The time that the user will be muted (only for the mute DM.)
+					<br>
+					<div class="usage">
+						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+					</div>
+					<br>
+					<div class="usage">
+						<span class="category">Examples:</span>
+					</div>
+					<div class="usage right">
+						<span class="code">;dm mute You have been muted by {moderator} for {duration} with reason: {reason}.</span>
 						<br>
 					</div>
 				</div>
@@ -1568,7 +1621,7 @@
 					Note: Use <span class="code">ignore [setting] none</span> to ignore no members, and <span class="code">ignore [setting] no-ch</span> to ignore no channels<br><b><u>Available settings</u></b><br><b>automod</b> - Channels, or role/discord permission of members, to ignore for <b>all</b> automod functions. <b>This overrides all of the settings below.</b><br><b>invites</b> - Same as above, but only for the <span class="code">no-invite</span> automod settings. (Allows members/channels to post invites.)<br><b>selfbots</b> - Allow channels/members to use selfbots.<br><b>mentions</b> - Allow channels/members to mention any number of members.<br><b>spam</b> - Disable spam protection (sending messages too quickly) in a channel or for certain members.<br><b>filter</b> - Bypass the filter (set with the <span class="code">filter</span> command) in a channel or for certain members.<br><b>names</b> - Allows members with a certain discord permission/roles to use names that are disallowed by the <span class="code">namefilter</span> command.
 					<br>
 					<div class="usage">
-						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
+						<span class="category">Default permission:</span> <span class="code">MANAGE_CHANNELS</span>
 					</div>
 					<br>
 					<div class="usage">
@@ -1585,6 +1638,8 @@
 						<br>
 					</div>
 				</div>
+			</div>
+			<div class="column">
 				<div class="command box" id="joinable">
 					<span class="code">;joinable</span> - Makes a role available for users to assign to themselves using <span class="code">roleme</span>. <b>"Types":</b>
 Use <span class="code">j</span> for <b>only</b> joinable, <span class="code">l</span> for <b>only</b> leavable, or <span class="code">jl</span> for both (default.)
@@ -1611,8 +1666,6 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 						<br>
 					</div>
 				</div>
-			</div>
-			<div class="column">
 				<div class="command box" id="log">
 					<span class="code">;log</span> - Changes logging settings, e.g. what channel to log actions in and which commands to log. <span class="gray">(Guild-only command)</span>
 					<br>
@@ -1621,7 +1674,7 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 					</div>
 					<br>
 					<br>
-					<b><u>Available settings:</u></b><br><b>channel</b> - The channel in which moderation actions are logged, if they're enabled.<br>​   <i>(Setting the channel to "none" will stop logging all actions.)</i><br><b>cases</b> - Whether to associate a case with each moderation action, and be able to retrieve and edit details<br><b>ban</b> - Use of the <span class="code">ban</span> command and automatic bans, e.g. from <span class="code">namefilter</span>.<br><b>mute</b> - Use of the <span class="code">mute</span> command or automatic mutes, e.g. from <span class="code">filter</span>.<br><b>unmute</b> - Use of the <span class="code">unmute</span> command or automatic unmutes (times out.)<br><b>role</b> | <b>purge</b> | <b>unban</b> | <b>warn</b> | <b>clonerole</b> - Use of the commands, respectively.<br><i>--- The settings above are enabled by default. The settings below are not. ---</i><br><b>deleted</b> - Logs any message being deleted, except in the logging channel.<br><b>edited</b> - Logs all messages being edited, except ones posted by bots.<br><b>commands</b> - Logs the usage of all commands in channels in which Bender has permission to type.<br><br>Except for <span class="code">channel</span>, all settings accept only the values <span class="code">true</span>/<span class="code">enable</span> and <span class="code">false</span>/<span class="code">disable</span>.<br>If you omit the value, the status of the logging for that command will be returned.
+					<b><u>Available settings:</u></b><br><b>channel</b> - The channel in which moderation actions are logged, if they're enabled.<br>​   <i>(Setting the channel to "none" will stop logging all actions.)</i><br><b>automod</b> - Channel in which automod violations will be logged, i.e. spamming or posting invites.<br>​   <i>If not specified, this defaults to the channel above.</i><br><b>cases</b> - Whether to associate a case with each moderation action, and be able to retrieve and edit details<br><b>ban</b> - Use of the <span class="code">ban</span> command and automatic bans, e.g. from <span class="code">namefilter</span>.<br><b>mute</b> - Use of the <span class="code">mute</span> command or automatic mutes, e.g. from <span class="code">filter</span>.<br><b>unmute</b> - Use of the <span class="code">unmute</span> command or automatic unmutes (times out.)<br><b>role</b> | <b>purge</b> | <b>unban</b> | <b>warn</b> | <b>clonerole</b> - Use of the commands, respectively.<br><i>--- The settings above are enabled by default. The settings below are not. ---</i><br><b>deleted</b> - Logs any message being deleted, except in the logging channel.<br><b>edited</b> - Logs all messages being edited, except ones posted by bots.<br><b>commands</b> - Logs the usage of all commands in channels in which Bender has permission to type.<br><br>The <span class="code">deleted</span>, <span class="code">edited</span>, and <span class="code">commands</span> settings all accept channel arguments as well as <span class="code">true</span>/<span class="code">enable</span> and <span class="code">false</span>/<span class="code">disable</span>; using <span class="code">true</span> will simply use the default logging channel.<br>If you omit the value, the status of the logging for that command will be returned.
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
@@ -1635,7 +1688,11 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 							<br>
 							<span class="code">;log kick true</span>
 							<br>
-							<span class="code">;log commands enable</span>
+							<span class="code">;log automod #wall_of_shame</span>
+							<br>
+							<span class="code">;log edited enable</span>
+							<br>
+							<span class="code">;log commands #cmd-log</span>
 						<br>
 					</div>
 				</div>
@@ -1691,12 +1748,16 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 					</div>
 					<br>
 					<br>
-					"Discord permission" refers to an item on <a href="https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS" target="_blank">this list</a>. It's generally the same names as the UI, with underscores instead of spaces.<br>Any permissions set here will override the defaults; individual command permissions override group permissions as well.<br>You can use <span class="code">@everyone</span> or <span class="code">everyone</span> to make a command available to all members.<br>To view the permissions for a command, just omit the second argument.<br><b>Append <span class="code">+</span> to the end of a role name to make the perms hierarchal (the __ role and above.)</b> Otherwise it will be limited to members that explicitly have the specified role.<br><span class="code">use_tags</span> is a special permission determining who can use the "custom commands" created by the <span class="code">tag</span> command.
+					"Discord permission" refers to an item on <a href="https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS" target="_blank">this list</a>. It's generally the same names as the UI, with underscores instead of spaces.<br>Any permissions set here will override the defaults; individual command permissions override group permissions as well.<br>You can use <span class="code">@everyone</span> or <span class="code">everyone</span> to make a command available to all members.<br>You can also use "reset" to reset the permissions.<br>To view the permissions for a command, just omit the second argument.<br><b>Append <span class="code">+</span> to the end of a role name to make the perms hierarchal (the __ role and above.)</b> Otherwise it will be limited to members that explicitly have the specified role.<br><span class="code">use_tags</span> is a special permission determining who can use the "custom commands" created by the <span class="code">tag</span> command.
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
 					</div>
 					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;permissions</span>
+					</div>
 					<div class="usage">
 						<span class="category">Examples:</span>
 					</div>
@@ -1717,7 +1778,7 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 					</div>
 					<br>
 					<br>
-					<b><u>Available settings:</u></b><br><b>mute</b> - Creates a "Muted" role and saves it as the <span class="code">;config muterole</span>.<br><b>log</b> - Find or create a log channel and set default logging settings.<br><strike><b>automod</b> - Enable recommended automod settings.~~<br><b>time</b> - Automatically assign the server a timezone (used for formatting dates) based on voice region.<br>~~<b>all</b> - Does all of the above.~~<br>~~<b>agreement</b> - Find or create a TOS/rules channel, find or ceate an agreement role, and enable the system with default settings.~~<br>~~<b>cmdchannel [channel]</b> - Set the pemissions and channel-specific permissions such that commands can only be used in a certain channel.</strike><br><i>Crossed-out settings are still in development/coming soon™</i>
+					<b><u>Available settings:</u></b><br><b>mute</b> - Creates a "Muted" role and saves it as the <span class="code">;config muterole</span>.<br><b>log</b> - Find or create a log channel and set default logging settings.<br><strike><b>automod</b> - Enable recommended automod settings.~~<br><b>time</b> - Automatically assign the server a timezone (used for formatting dates) based on voice region.<br>~~<b>all</b> - Does all of the above.~~<br>~~<b>agreement</b> - Find or create a TOS/rules channel, find or ceate an agreement role, and enable the system with default settings.</strike><br><b>cmdchannel [channel]</b> - Set the pemissions and channel-specific permissions such that commands can only be used in a certain channel.<br><i>Crossed-out settings are still in development/coming soon™</i>
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">ADMINISTRATOR</span>
@@ -1767,7 +1828,7 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 					</div>
 					<br>
 					<br>
-					<b><u>Available settings:</u></b><br><i>Setting any of the settings to "none" will delete the value instead of using the text "none".</i><br><b>channel</b> - The channel in which the following messages are sent:<br><b>message</b> - The message to be posted when a user joins the server.<br><b>dm</b> - A message to be sent to the user's PM when they join the server. <i>note: if they have DMs enabked it will mention them in the welcome channel then delete the message after 30 seconds</i><br><b>leave-msg</b> - Message to be posted when a user leaves the server.<br><b>ban-msg</b> - When a user is banned, post this, blah blah blah...<br><br><b><u>Values that can be used in <span class="code">join/leave/ban</span> messages:</u></b><br><span class="code">{id}</span> - The member's ID. 				<span class="code">{user}</span> - Shows a user's "tag", e.g. <span class="code">Joe 🎸#7070</span>.<br><span class="code">{member}</span> - Mentions the server member (recommended only for the join message, as ban/leave mentions will turn into ID's shortly after the user is gone.)<br><span class="code">{server}</span> - The name of the server.		<span class="code">{count}</span> - The number of server members.<br><b><u>Values only available in join messages:</u></b><br><span class="code">{today}</span> - Number of members gained today.		<span class="code">{thisweek}</span> Number of members gained this week.<br><span class="code">{new}</span> - Shows when the user's account was created, if it was less than 2 days ago.<br><u>Note:</u> adding <span class="code">th</span> to the end of <span class="code">{count}</span>, <span class="code">{today}</span>, or <span class="code">{thisweek}</span> will properly format the number; For example, <span class="code">{count}th member</span> would produce "2nd member", "23rd member", "55th member" etc.
+					<b><u>Available settings:</u></b><br><i>Setting any of the settings to "none" will delete the value instead of using the text "none".</i><br><b>channel</b> - The channel in which the following messages are sent:<br><b>message</b> - The message to be posted when a user joins the server.<br><b>dm</b> - A message to be sent to the user's PM when they join the server. <i>note: if they have DMs enabled it will mention them in the welcome channel then delete the message after 30 seconds</i><br><b>leave-msg</b> - Message to be posted when a user leaves the server.<br><b>ban-msg</b> - When a user is banned, post this, blah blah blah...<br><br><b><u>Values that can be used in <span class="code">join/leave/ban</span> messages:</u></b><br><span class="code">{id}</span> - The member's ID. 				<span class="code">{user}</span> - Shows a user's "tag", e.g. <span class="code">Joe 🎸#7070</span>.<br><span class="code">{member}</span> - Mentions the server member (recommended only for the join message, as ban/leave mentions will turn into ID's shortly after the user is gone.)<br><span class="code">{server}</span> - The name of the server.		<span class="code">{count}</span> - The number of server members.<br><b><u>Values only available in join messages:</u></b><br><span class="code">{today}</span> - Number of members gained today.		<span class="code">{thisweek}</span> Number of members gained this week.<br><span class="code">{new}</span> - Shows when the user's account was created, if it was less than 2 days ago.<br><u>Note:</u> adding <span class="code">th</span> to the end of <span class="code">{count}</span>, <span class="code">{today}</span>, or <span class="code">{thisweek}</span> will properly format the number; For example, <span class="code">{count}th member</span> would produce "2nd member", "23rd member", "55th member" etc.
 					<br>
 					<div class="usage">
 						<span class="category">Default permission:</span> <span class="code">MANAGE_GUILD</span>
@@ -2038,8 +2099,6 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 						<br>
 					</div>
 				</div>
-			</div>
-			<div class="column">
 				<div class="command box" id="help">
 					<span class="code">;help</span> - Lists commands or shows info about a specified command.
 					<br>
@@ -2062,6 +2121,8 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 						<br>
 					</div>
 				</div>
+			</div>
+			<div class="column">
 				<div class="command box" id="ping">
 					<span class="code">;ping</span> - Gets bot ping in milliseconds.
 					<br>
@@ -2092,10 +2153,26 @@ Use <span class="code">none</span> to explicitly disable. Default behavior is to
 						<br>
 					</div>
 				</div>
+				<div class="command box" id="shard">
+					<span class="code">;shard</span> - Shows info about the bot's shards.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;shardstats</span>, <span class="code">;shardinfo</span>
+					</div>
+				</div>
+				<div class="command box" id="status">
+					<span class="code">;status</span> - Gets technical info about the bot and other things.
+					<br>
+					<div class="usage">
+						<span class="category">Aliases: </span>
+						<span class="code">;uptime</span>, <span class="code">;botstats</span>, <span class="code">;bstats</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script src="./cmds-v2.0.1.js"></script>
-	<!-- Generated at Thu May 17 2018 15:20:25 GMT+0000 (UTC) -->
+	<!-- Generated at Thu Oct 11 2018 22:20:55 GMT+0000 (UTC) -->
 </body>
 </html>
