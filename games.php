@@ -48,6 +48,26 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+	<script>
+	window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#252e39"
+	    },
+	    "button": {
+	      "background": "#14a7d0"
+	    }
+	  },
+	  "theme": "classic",
+	  "position": "bottom-right",
+	  "content": {
+	    "href": "https://benderbot.co/privacy"
+	  }
+	})});
+	</script>
 </head>
 <body>
     <div class="title has-text-centered">Here's a big-ass list of games.
