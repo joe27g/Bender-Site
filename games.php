@@ -57,7 +57,7 @@
     <div id="games" class="columns">
         <div class="column">
             <?php
-            $data = file_get_contents("https://discordapp.com/api/v6/games");
+            $data = file_get_contents("https://discordapp.com/api/v6/applications/detectable");
             $games = json_decode($data, true);
             $middle = sizeof($games) / 2 - 17;
             $str = "";

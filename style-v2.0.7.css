@@ -30,6 +30,16 @@ img.b {
     vertical-align: bottom;
 }
 
+#info-footer {
+    height: 42px;
+    padding: 9px;
+}
+#commands-footer {
+    height: 32px;
+    margin-top: -25px;
+    padding: 5px;
+}
+
 .hidden {
     display: none !important;
 }
@@ -71,12 +81,16 @@ li.tab.selected {
     box-sizing: border-box;
     padding-bottom: calc(0.3em - 2px);
 }
+
 @media screen and (max-width: 768px) {
     .level-left+.level-right {
         margin-top: 0.5em;
     }
     section#content-wrapper {
-        height: calc(100vh - 167px) !important;
+        height: calc(100vh - 267px) !important;
+    }
+    div#features-wrapper, #main-content {
+        max-width: 100%;
     }
 }
 
@@ -87,15 +101,51 @@ section#content-wrapper {
 }
 
 div#commands, div#features {
-    margin: 10px;
     box-shadow: inset 0px 0px 10px #000;
     border-radius: 10px;
     padding: 10px;
+}
+
+div#commands {
+    margin: 10px;
     height: calc(100% - 3em);
+}
+
+div#features {
+    background-color: #1f2424;
+}
+
+div#features-wrapper {
+    margin-top: 30px;
+    background-color: rgba(0, 100, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 100, 255, 0.5);
+}
+
+div#features-wrapper, #main-content {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+#features-wrapper > .title {
+    margin:  0;
+    padding-bottom: 10px;
 }
 
 html, section {
     overflow: hidden !important;
+}
+
+#main-content > img {
+    float: left;
+    margin-right: 3em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.info-section {
+    margin-top: 1em;
 }
 
 span.code {
@@ -112,6 +162,7 @@ span.code {
     background-color: #2f3333;
     transition: all 500ms;
 }
+
 .command.flash {
     background: rgba(255, 167, 0, 0.2);
 }
@@ -135,9 +186,12 @@ span.category {
 }
 
 .columns {
-    overflow:  auto !important;
-    height: 100%;
+    overflow: auto !important;
     margin-top: .2rem;
+}
+
+#commands .columns {
+    height: 100%;
 }
 
 .column {
@@ -151,7 +205,7 @@ footer#invite-advert {
     width: 100%;
 }
 
-#content > img {
+#main-content > img {
     float: left;
     margin-right: 3em;
     border-radius: 5px;
@@ -211,7 +265,7 @@ span.discrim {
 }
 
 @media screen and (max-width: 500px) {
-    #content > img {
+    #main-content > img {
         height: 200px;
         margin: 0 auto;
         margin-bottom: 10px;
