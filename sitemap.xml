@@ -1,27 +1,27 @@
 <!-- badly made sitemap, lul -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-<loc>https://benderbot.co/</loc>
+<loc>https://benderbot.co</loc>
 <lastmod>2018-02-08T19:00:44+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
-<loc>https://benderbot.co/commands/</loc>
+<loc>https://benderbot.co/commands</loc>
 <lastmod>2018-02-08T18:20:43+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
-<loc>https://benderbot.co/pro/</loc>
+<loc>https://benderbot.co/pro</loc>
 <lastmod>2018-02-08T10:46:46+00:00</lastmod>
 <priority>0.90</priority>
 </url>
 <url>
-<loc>https://benderbot.co/donate/</loc>
+<loc>https://benderbot.co/donate</loc>
 <lastmod>2018-02-08T10:46:46+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://benderbot.co/tos/</loc>
+<loc>https://benderbot.co/tos</loc>
 <lastmod>2018-02-08T10:46:46+00:00</lastmod>
 <priority>0.40</priority>
 </url>
@@ -31,7 +31,7 @@
 <priority>0.25</priority>
 </url>
 <url>
-<loc>https://benderbot.co/thanks/</loc>
+<loc>https://benderbot.co/thanks</loc>
 <lastmod>2018-02-08T10:46:46+00:00</lastmod>
 <priority>0.10</priority>
 </url>
