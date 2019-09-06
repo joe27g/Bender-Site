@@ -48,6 +48,15 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126650650-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-126650650-1');
+	</script>
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
 	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
 	<script>
@@ -91,7 +100,7 @@
                 $str .= '<span class="game-name">' . $game['name'] . '</span><br>';
                 $str .= '<span class="game-desc">' . (array_key_exists('summary' , $game) ? $game['summary'] : 'No description provided.') . '</span><br>';
                 if (array_key_exists('publishers' , $game)) {
-                    $str .= '<br><span class="game-pub">Publisher: ' . $game['publishers'][0] . '</span>';
+                    $str .= '<br><span class="game-pub">Publisher: ' . $game['publishers'][0]['name'] . '</span>';
                 }
                 if (array_key_exists('distributor_games' , $game) && sizeof($game['distributor_games']) !== 0 && array_key_exists('distributor', $game['distributor_games'][0])) {
                     $str .= '<br>Available from ' . ucfirst($game['distributor_games'][0]['distributor']);

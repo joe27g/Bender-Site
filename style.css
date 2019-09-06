@@ -34,7 +34,7 @@ img.b {
     height: 42px;
     padding: 9px;
 }
-#command-footer {
+#commands-footer {
     height: 32px;
     margin-top: -25px;
     padding: 5px;
@@ -279,6 +279,8 @@ span.discrim {
 
 #donate {
     margin: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .method {
