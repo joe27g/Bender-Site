@@ -1,186 +1,71 @@
-
-<html lang="en">
-<head>
-	<title>Bender</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#0050C5">
-	<meta name="keywords" content="Discord, Bot, Bender, Best, Discord Bot, benderbot, Features">
-	<meta name="og:title" content="Bender" />
-	<meta name="og:description" content="The meanest and most useful Discord bot this side of b1nzy's rate limits. Highly customizable, rude, and unique, with more features than your average bot." />
-	<meta name="description" content="The meanest and most useful Discord bot this side of b1nzy's rate limits. Highly customizable, rude, and unique, with more features than your average bot." />
-	<meta name="og:image" content="https://benderbot.co/Bender-large.png" />
-	<meta name="og:site_name" content="Bender Bot">
-	<meta name="og:url" content="https://benderbot.co">
-	<link rel="stylesheet" href="./style.css?v=208">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
-    <script type="application/ld+json" id="google-breadcrumbs">
-	{
-	  "@context": "http://schema.org",
-	  "@type": "BreadcrumbList",
-	  "itemListElement": [{
-	    "@type": "ListItem",
-	    "position": 1,
-	    "item": {
-	      "@id": "https://benderbot.co",
-	      "name": "Bender Bot"
-	    }
-	  },{
-	    "@type": "ListItem",
-	    "position": 2,
-	    "item": {
-	      "@id": "https://benderbot.co/",
-	      "name": "Home"
-	    }
-	  }]
-	}
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126650650-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-126650650-1');
-	</script>
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#252e39"
-	    },
-	    "button": {
-	      "background": "#14a7d0"
-	    }
-	  },
-	  "theme": "classic",
-	  "position": "bottom-right",
-	  "content": {
-	    "href": "https://benderbot.co/privacy"
-	  }
-	})});
-	</script>
-</head>
-<body>
-	<section id="header-wrapper">
-        <header>
-            <img src="./Bender.png" class="b" alt="Bender logo">Bender
-        </header>
-    </section>
-    <section id="nav-wrapper">
-        <div id="header" class="hero">
-            <div class="hero-head">
-				<div class="level">
-                    <div class="level-left">
-						<span>An overview of Bender - check out the <a href="./commands">commands</a> page for more info.</span>
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bender</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
+        <link rel="stylesheet" href="./style.css?v=6969">
+        <script defer src="./stuff.js"></script>
+    </head>
+    <body>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item" href="https://benderbot.co">
+                    <img class="round" src="https://cdn.discordapp.com/avatars/300800171988484096/439fd6e1bb89d8dcb3a3b2d201b82fe5.png?size=2048" height="32">
+                    <span class="title is-5" id="bender-label">&nbsp;Bender</span>
+                </a>
+            </div>
+            <div id="nmenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/commands">
+                        Commands
+                    </a>
+                    <a class="navbar-item" href="/pro">
+                        Bender Pro
+                    </a>
+                    <a class="navbar-item" href="/donate">
+                        Donate
+                    </a>
+                    <a class="navbar-item" href="/tos">
+                        TOS
+                    </a>
+                    <a class="navbar-item" href="/invite">
+                        Invite to your server
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light" href="/support">
+                                <strong>Support server</strong>
+                            </a>
+                            <a class="button is-primary" href="https://dashboard.benderbot.co">
+                                Dashboard
+                            </a>
+                        </div>
                     </div>
-                    <div class="level-right">Join the support server!
-                        <a href="https://discord.gg/99xaeGn" class="discord">
-							<img src="https://discordapp.com/api/guilds/353660669490626560/embed.png" alt="Discord server">
-    					</a>
-					</div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="content-wrapper" class="hero">
-        <div id="content">
-			<div id="main-content">
-        		<img src="./bender-painting.png" alt="Exquisite painting of Bender">
-				<table id="binfo"><tbody>
-					<tr><td valign="top">
-						<div class="binfo">
-						    <p>Bender is a bot designed to be flexible - it is highly configurable and balances moderation and fun.</p>
-							<p>It also has unique features, namely editable commands and the ability to use Discord permissions as well as roles for a permissions system.</p>
-							<p>Trusted by over 0 servers and growing daily.</p>
-						</div>
-					</td></tr>
-				    <tr><td valign="bottom">
-					    <div id="links" class="binfo">
-							Some things you may want to do:
-							<br>
-							<a href="./invite" target="_blank">🔗 Add Bender</a> to your server
-							<br>
-							<img id="dbl-icon" src="./dbl.png" alt="DBL icon"> View Bender on <a href="https://discordbots.org/bot/300800171988484096" target="_blank">Discord Bot List</a>
-							<br>
-							💬 Join <a href="https://discord.gg/99xaeGn" target="_blank">Bender's Lair</a> for support or suggestions.
-							<br>
-							<a href="./donate">🎨 Donate</a> to help keep the project going.
-							<br>
-							<a href="./pro">💎 Purchase Bender Pro</a> for even more features and commands!
-						</div>
-					</td></tr>
-				</tbody></table>
-			</div>
-			<div class="info-section has-text-centered">
-			    Created by: <div class="sponsor"><img src="https://cdn.discordapp.com/avatars/246107833295175681/a_a275449e0b19bfcfc29572f13c390d4c.gif?size=32" class="pfp" alt="Joe 🎸's avatar">Joe 🎸<span class="discrim">#7070</span></div>|
-			    <a href="https://discordbots.org/bot/300800171988484096">
-				  	<img src="https://discordbots.org/api/widget/status/300800171988484096.svg?noavatar=true" alt="status" class="dbl-widget">
-				    <img src="https://discordbots.org/api/widget/servers/300800171988484096.svg?noavatar=true" alt="server count" class="dbl-widget">
-				    <img src="https://discordbots.org/api/widget/upvotes/300800171988484096.svg?noavatar=true" alt="upvote count" class="dbl-widget">
-				    <img src="https://discordbots.org/api/widget/lib/300800171988484096.svg?noavatar=true" alt="library" class="dbl-widget">
-				</a>
-			</div>
-			<div id="sponsors" class="info-section has-text-centered">
-				<span>Special thanks to:</span>
-				<br>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/284224712408563713/a_22773e2b11765f3bc3508f8a28988b10.gif?size=32" class="pfp" alt="lukas's avatar">lukas<span class="discrim">#1234</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/244857004202524672/38ddca92eb44238db3ac655fdd483b47.png?size=32" class="pfp" alt="jakuski's avatar">jakuski<span class="discrim">#9191</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/380818171570946060/175c601b82431dae7c9b81d2c1a043ef.png?size=32" class="pfp" alt="Epsidog's avatar">Epsidog<span class="discrim">#7081</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/339476546001698818/36895405d9e52279447c40d05d001125.png?size=32" class="pfp" alt="ForgottenB's avatar">ForgottenB<span class="discrim">#4709</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/165535234593521673/a_fe7d8dba2a95f5a7bc81ea733f2357e9.gif?size=32" class="pfp" alt="Indy's avatar">Indy<span class="discrim">#1010</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/66201908544540672/cc22ab41e383bd060a99b9ede2a26af0.png?size=32" class="pfp" alt="Blom's avatar">Blom<span class="discrim">#1835</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/194068373980708864/c5bbdf5bbc26187e0780c228cd60863b.png?size=32" class="pfp" alt="SonicSteven's avatar">SonicSteven<span class="discrim">#0001</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/175215094228058112/79b6192716a831a54991cac5720d1ea7.png?size=32" class="pfp" alt="wawixs's avatar">wawixs<span class="discrim">#6695</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/391743942070370304/a_d541b0c4583e2b2eb6f78fc6c9d59778.gif?size=32" class="pfp" alt="Mark󠀀󠀀's avatar">Mark󠀀󠀀<span class="discrim">#0001</span></div>
-				<div class="sponsor"><img src="https://cdn.discordapp.com/avatars/422600703811256320/d7ce33031e3ea43c33c2676570bd33bd.png?size=32" class="pfp" alt="paulth2gaming's avatar">paulth2gaming<span class="discrim">#3646</span></div>
-				<br>
-				<span>for sponsoring this project and keeping Bender alive!</span>
-			</div>
-			<div id="features-wrapper" class="info-section">
-				<div class="title has-text-centered">Features</div>
-				<div id="features">
-					<div class="columns">
-						<div class="column list">
-							<span class="category">Unique permissions system</span><br>
-							Allows you to set permissions for each command or for groups of commands by discord permissions (Manage Guild, Kick Members, etc.), by role (specified roles only), or hierarchical roles (specified role and up.)
-							<br><br>
-							<span class="category">Agreement system</span><br>
-							With only a few commands, you can have Bender tell users to agree to your TOS, give them a role while they haven't done so, and DM them with a custom message.
-							<br><br>
-							<span class="category">Info command simplified</span><br>
-							Many bots have different commands like !userinfo, !roleinfo, !serverinfo etc. With Bender, you can use any of these, or you can use the info command for all of the above and let Bender handle your input intelligently.
-							<br><br>
-							<span class="category">Fun commands</span><br>
-							Having fun bots makes your server more lively. Bender lets you flip coins, roll dice, play rock-paper-scissors, get roasted by stolen one-liners, and more.
-							<br><br>
-							<span class="category">Welcome messages</span><br>
-							With only a few commands you can tell Bender to welcome users to your server, tell them goodbye, and laugh at them when they get banned. You can include the server name, username, user mention, and/or number of server members in these messages as you wish.
-						</div>
-						<div class="column list">
-							<span class="category">Text tools</span><br>
-							Ever find yourself using text transfoming sites just to tab back and paste it in Discord to show off your cool Unicode™? Or left your caps lock on and cba to type it again? Struggle no more, Bender will change your text however you like it.
-							<br><br>
-							<span class="category">Chat filtering</span><br>
-							Keep your chat clean with a regex filter to delete messages and take the action you configure the bot to take. Also has a separate filter for usernames to gracefully remove members with names you don't want to see.
-							<br><br>
-							<span class="category">Role management</span><br>
-							If you have users that have paid for a subscription, or you're just forgetful and won't remember to remove someone's role after a certain time, Bender can help you out. Give users a role for any time between 1 minute and 1 year, and you can keep track of when the role will expire.
-							<br><br>
-							<span class="category">Action logging</span><br>
-							Along with moderation commands, many people like to see logs of who did what and when. After configuring it to do so, Bender will log command usage, edited messages, deleted messages, and moderation actions, from mutes to purging messages to bans.
-							<br><br>
-							<span class="category">Customizable automatic moderation</span><br>
-							Especially when it comes to moderation, Bender is very customizable. Prevent users from spamming, mass mentioning, using selfbots, and more using the automod features. All features are equipped with settings that allow you to whitelist or "ignore" certain members, and many have additional settings.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Generated at Sun Feb 10 2019 10:00:50 GMT-0600 (Central Standard Time) -->
-</body></html>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Section</h1>
+                <h2 class="subtitle">
+                A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+                </h2>
+            </div>
+        </section>
+        <footer class="footer navbar is-fixed-bottom">
+            <div class="content has-text-centered">
+                <p>
+                    © 2019 Bender Bot. <a href="mailto:contact@benderbot.co">Contact Us</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
