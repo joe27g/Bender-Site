@@ -27,7 +27,7 @@ hr {
     padding: 10px;
 }
 .navbar {
-	background-color: #0066ff;
+	background-color: #014cc4;
 }
 .navbar-buttons {
     float: right;
@@ -38,20 +38,27 @@ hr {
     padding: .75rem 1rem;
 }
 .navbar .button.is-light {
-    background-color: #287eff;
+    background-color: #2472e6;
     color: #fff;
 }
 .navbar .button.is-light:hover {
-	background-color: #5a9cff;
+	background-color: #3e84ee;
 }
 .navbar .button.is-primary {
-    background-color: #d50000;
+    background-color: #fff;
+    color: #2069d5;
 }
 .navbar .button.is-primary:hover {
-    background-color: #ff3333;
+    color: #000;
+}
+.navbar .button:hover {
+    transform: scale(1.075);
+}
+.navbar .button strong {
+    margin-top: -1px;
 }
 a.navbar-item:hover, .navbar-burger:hover {
-    background-color: #287eff;
+    background-color: #2069d5;
     color: #fff;
 }
 footer.navbar {
@@ -87,7 +94,7 @@ footer.navbar .content {
 }
 @media screen and (min-width: 1024px) {
 	.navbar-brand .navbar-item {
-		border-right: 2px solid #287eff;
+		border-right: 2px solid #2069d5;
 	}
 	.navbar-end {
 		display: flex;
@@ -98,14 +105,14 @@ footer.navbar .content {
     margin: 2px;
 }
 span.stat {
-    background-color: #084700;
+    background-color: #001947;
     vertical-align: middle;
     padding: 2px 6px 4px 0;
     margin: 0 3px;
     border-radius: 4px;
 }
 strong.num {
-    background-color: #3a8631;
+    background-color: #014cc4;
     padding: 2px 4px 4px 5px;
     height: 100%;
     margin-right: 2px;
@@ -134,4 +141,10 @@ strong.num {
 }
 .cb {
 	margin-left: 6px;
+}
+a {
+	color: #4e92ff;
+}
+a:hover {
+	color: #7baeff;
 }
