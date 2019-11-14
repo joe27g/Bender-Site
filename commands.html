@@ -2,11 +2,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bender</title>
+        <title>Bender Commands</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
         <link rel="stylesheet" href="./style.css?v=6969">
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
-        <script defer src="./stuff.js"></script>
+        <script defer src="./stuff_lite.js"></script>
     </head>
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -56,54 +56,8 @@
             </div>
         </nav>
         <section class="section">
-            <div class="centered-container">
-                <img id="bender_art" src="https://benderbot.co/bender-painting.png">
-                <div id="feature_overview">
-                    <h1 class="title">What does Bender do for my server?</h1>
-                    <h2 class="subtitle">
-                        Bender is a high-quality bot packed with many features (over 180 commands!) To name a few:
-                    </h2>
-                    <p>
-                        <ul>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f6e1.png"> A customizable agreement system to require users to accept the rules/terms before joining your server.</li>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f528.png"> Moderation and automod commands to keep your server clear of spammers and other undesirable people.</li>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f3ae.png"> Game stats commands for many popular games, including Apex Legends, CSGO, PUBG, Battlefield V, and more.</li>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f512.png"> Configurable permissions system so you can choose the exact level of access you want for each command.</li>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f51e.png"> NSFW commands that can fetch a variety of images, GIFs, and videos.</li>
-                            <li><img class="icon" src="https://twemoji.maxcdn.com/2/72x72/1f5bc.png"> Image editing commands & meme creation commands (available with <a href="/pro">Bender Pro</a>.)</li>
-                        </ul>
-                    </p>
-                    <br>
-                    <span>
-                        To see more info about Bender's features, see the <a href="/commands">commands page</a>.
-                    </span>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="section thin has-text-centered">
-            <div class="container">
-                <p>
-                    Currently powering <span class="stat"><strong class="stat-num">{{ botStats.totalGuilds }}</strong><span class="stat-label"> servers</span></span>
-                    with <span class="stat"><strong class="stat-num">{{ botStats.totalUsers }}</strong><span class="stat-label"> users</span></span>
-                    <span v-if="botStats.sharded">on <span class="stat"><strong class="stat-num">{{ botStats.shardCount }}</strong><span class="stat-label"> shards</span></span></span>
-                    &nbsp;-&nbsp; &nbsp;For details see the <a href="/stats">stats page</a> or the <a href="https://status.benderbot.co">status website</a>.
-                </p>
-            </div>
-        </section>
-        <hr>
-        <section class="section">
-            <div class="centered-container">
-                    <h1 class="title">Sponsors</h1>
-                    <h2 class="subtitle">
-                        Special thanks to our sponsors, who have made Bender possible by donating!
-                    </h2>
-                    <span class="user" v-for="user in sponsors">
-                        <img :src="getAvatar(user)" class="pfp" :alt="user.username + '\'s avatar'">
-                        {{ user.username }}<span class="discrim">#{{ user.discriminator }}</span>
-                    </span>
-            </div>
-        </section>
+            joe mama
+    	</section>
         <footer class="footer navbar is-fixed-bottom">
             <div class="navbar-start">
                 <span class="c cb">Created by</span>
