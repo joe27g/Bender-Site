@@ -105,13 +105,13 @@ var vue = new Vue({
 	}
 });
 
-fetch('https://api.benderbot.co/quick_stats').then(response => {
+fetch('https://api.benderbot.co/stats_sponsors_devs').then(response => {
 	if (response.ok) {
 		response.json().then(obj => {
 			vue.botStats = obj;
 			vue.sponsors = obj.sponsors;
-			vue.joe_mama = obj.joe;
-			vue.dutchman = obj.mark;
+			vue.joe_mama = obj.devs.joe;
+			vue.dutchman = obj.devs.mark;
 		}).catch(console.error);
 	}
 }).catch(console.error);

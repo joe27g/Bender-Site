@@ -16,33 +16,28 @@ if (button) button.onclick = function() {
 var vue = new Vue({
 	el: '#body',
 	data: {
+		commands: {},
 		joe_mama: {
 			username: "Joe 🎸",
 			id: "246107833295175681",
 			discriminator: 7070,
-			avatar: "a_9f462d01ef3f66d5f5899dc475fbb08f"
+			avatar: null
 		},
 		dutchman: {
 			username: "Mark.",
 			id: "391743942070370304",
 			discriminator: 9999,
-			avatar: "a_c31d947b788e499ec7d219c09e300879"
-		}
-	},
-	methods: {
-		getAvatar: (userObject, size = 32) => {
-			if (userObject.avatar)
-				return `https://cdn.discordapp.com/avatars/${userObject.id}/${userObject.avatar}.${userObject.avatar.startsWith('a_') ? 'gif' : 'png'}?size=${size}`;
-			return `https://cdn.discordapp.com/embed/avatars/${userObject.discriminator % 5}.png`;
+			avatar: null
 		}
 	}
 });
 
-fetch('https://api.benderbot.co/devs').then(response => {
+fetch('https://api.benderbot.co/commands_devs').then(response => {
 	if (response.ok) {
 		response.json().then(obj => {
-			vue.joe_mama = obj.joe;
-			vue.dutchman = obj.mark;
+			vue.commands = obj.commands;
+			vue.joe_mama = obj.devs.joe;
+			vue.dutchman = obj.devs.mark;
 		}).catch(console.error);
 	}
 }).catch(console.error);
