@@ -116,6 +116,14 @@ footer.navbar .content {
 		border-right: 2px solid #2069d5;
 	}
 }
+@media screen and (max-width: 470px) {
+	#bender-label {
+	    display: none;
+	}
+	a.navbar-item {
+	    padding: 0;
+	}
+}
 .icon {
     vertical-align: middle;
     margin: 2px;
@@ -300,4 +308,7 @@ span.gray {
 }
 .table.centered {
     margin: 0 auto;
+}
+.buttons {
+    margin-top: 4px;
 }
