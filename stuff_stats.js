@@ -34,15 +34,14 @@ var vue = new Vue({
 			const diff = Date.now() - date;
 
 			if (diff >= day)
-				return `${Math.floor(diff / day)} day${Math.floor(diff / day) === 1 ? '' : 's'}`;
+				return `${Math.floor(diff / day)}d`;
 			if (diff >= hr)
-				return `${Math.floor(diff / hr)} hour${Math.floor(diff / hr) === 1 ? '' : 's'}`;
+				return `${Math.floor(diff / hr)}h`;
 			if (diff >= min)
-				return `${Math.floor(diff / min)} minute${Math.floor(diff / min) === 1 ? '' : 's'}`;
-			if (diff >= 1000)
-				return `${Math.floor(diff / 1000)} second${Math.floor(diff / 1000) === 1 ? '' : 's'}`;
-			return `${diff} millisecond${diff === 1 ? '' : 's'}`;
-
+				return `${Math.floor(diff / min)}h`;
+			if (diff >= 3000)
+				return `${Math.floor(diff / 1000)}s`;
+			return `just now`;
 		}
 	}
 });
