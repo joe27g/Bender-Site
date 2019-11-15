@@ -16,6 +16,7 @@ if (button) button.onclick = function() {
 var vue = new Vue({
 	el: '#body',
 	data: {
+		menu_open: false,
 		botStats: {
 			sharded: false,
 			totalUsers: '???',
@@ -108,7 +109,7 @@ var vue = new Vue({
 fetch('https://api.benderbot.co/stats_sponsors_devs').then(response => {
 	if (response.ok) {
 		response.json().then(obj => {
-			vue.botStats = obj;
+			vue.botStats = obj.stats;
 			vue.sponsors = obj.sponsors;
 			vue.joe_mama = obj.devs.joe;
 			vue.dutchman = obj.devs.mark;

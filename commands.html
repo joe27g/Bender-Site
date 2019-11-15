@@ -13,8 +13,9 @@
         <link rel="stylesheet" href="./bulmaswatch.min.css">
         <link rel="stylesheet" href="./style.css?v=6969">
         <script src="./vue.min.js"></script>
+        <script defer src="./simple-markdown.min.js"></script>
         <script defer src="./stuff_commands.js"></script>
-        <script src="./masonry.pkgd.min.js"></script>
+        <script defer src="./masonry.pkgd.min.js"></script>
     </head>
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -47,7 +48,7 @@
                     <a class="navbar-item" href="/invite">Invite to your server</a>
                     <a class="navbar-item" href="/pro">Bender Pro</a>
                     <a class="navbar-item" href="/donate">Donate</a>
-                    <a class="navbar-item" href="https://discordserverlist.me">Server list<div class="small">discordserverlist.me</div></a>
+                    <a class="navbar-item" href="https://discordservers.me" target="_blank">Server list<div class="small">discordservers.me</div></a>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
@@ -70,26 +71,24 @@
             <hr class="thin">
         </section>
         <section class="section ntp">
-            <div v-for="(data, group) in commands" class="container has-text-centered grid" v-if="selected_group === group">
-                <div v-for="command in data" class="command box grid-item ib" :id="command.name">
-					<span class="code">{{ prefix }}{{ command.name }}</span> - {{ command.description }}
-					<br v-if="command.format">
+            <div v-for="(data, group) in commands" :id="group" class="container has-text-centered" v-show="selected_group === group">
+                <div class="command sizer"></div>
+                <div v-for="command in data" class="command box ib" :id="command.name">
+					<span class="code">{{ prefix }}{{ command.name }}</span> - <span v-html="parseMD(command.description)"></span>
+					<hr class="mid">
 					<div class="usage" v-if="command.format">
 						<span class="category">Usage:</span> <span class="code">{{ prefix }}{{ command.name }} {{ command.format }}</span>
 					</div>
-					<br>
-					<br>
-					{{ command.details || "" }}
+					<br v-if="command.format">
+                    <div v-html="parseMD(command.details || '')"></div>
 					<br v-if="command.details">
-					<div class="usage" v-if="command.aliases">
+					<div class="usage aliases" v-if="command.aliases">
 						<span class="category">Aliases: </span>
 						<span v-for="alias in command.aliases" class="code">{{ prefix }}{{ alias }}</span>
 					</div>
-					<div class="usage" v-if="command.examples">
+					<div class="usage examples" v-if="command.examples">
 						<span class="category">Examples:</span>
-					</div>
-					<div class="usage right" v-if="command.examples">
-						<span class="code" v-for="example in command.examples">{{ example }}<br></span>
+						<span class="code" v-for="example in command.examples">{{ prefix }}{{ example }}<br></span>
 					</div>
 				</div>
                 <div class="has-text-centered" v-show="!data.length">

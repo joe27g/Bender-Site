@@ -16,6 +16,7 @@ if (button) button.onclick = function() {
 var vue = new Vue({
 	el: '#body',
 	data: {
+		menu_open: false,
 		joe_mama: {
 			username: "Joe 🎸",
 			id: "246107833295175681",

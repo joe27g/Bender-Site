@@ -18,7 +18,7 @@
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                <a role="button" @click="menu_open = !menu_open" :class="menu_open ? 'is-active navbar-burger burger' : 'navbar-burger burger'" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -40,13 +40,13 @@
                     </div>
                 </div>
             </div>
-            <div id="nmenu" class="navbar-menu">
+            <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/commands">Commands</a>
-                    <a class="navbar-item" href="/pro">Bender Pro</a>
-                    <a class="navbar-item" href="/donate">Donate</a>
-                    <a class="navbar-item" href="/tos">TOS</a>
                     <a class="navbar-item" href="/invite">Invite to your server</a>
+                    <a class="navbar-item" href="/pro">Bender Pro</a>
+                    <a class="navbar-item" href="/donate"><u>Donate</u></a>
+                    <a class="navbar-item" href="https://discordservers.me" target="_blank">Server list<div class="small">discordservers.me</div></a>
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">

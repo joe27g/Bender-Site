@@ -92,6 +92,9 @@ footer.navbar .content {
 	.navbar .navbar-menu {
 		background-color: #0048bb !important;
 	}
+	.navbar-item {
+	    padding: .5rem 1rem;
+	}
 	.navbar-brand, .navbar-buttons {
 		display: inline-flex;
 	}
@@ -102,7 +105,10 @@ footer.navbar .content {
 	    display: none;
 	}
 	.command {
-		width: 100%;
+		width: 100% !important;
+	}
+	.navbar-item > .small {
+	    position: static;
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -164,12 +170,13 @@ a {
 a:hover {
 	color: #7baeff;
 }
-span.code {
+code, span.code {
     font-family: Consolas;
     font-size: 13px;
     background-color: rgba(255,255,255,0.2);
     padding: 2px 4px 3px;
     border-radius: 3px;
+	color: #fff;
 }
 #pro li:not(:first-of-type):before {
     content: "";
@@ -258,14 +265,27 @@ hr.thin {
 	padding-top: 0;
 }
 .command {
-	margin: 7px;
+	margin: 7px !important;
 	text-align: left;
 	width: 48%;
+}
+.command.sizer {
+	margin: 0 !important;
 }
 .small {
     position: absolute;
     bottom: 9px;
-    left: 9px;
+    left: 12px;
     font-size: 9px;
     color: #b0c6ea;
+}
+hr.mid {
+	margin: .75rem 0;
+}
+.aliases > .code:not(:first-child) {
+    margin-left: 4px;
+}
+.examples > .code:not(:first-child) {
+    margin-top: 3px;
+    display: table;
 }

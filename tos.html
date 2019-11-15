@@ -3,15 +3,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bender TOS</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
+        <meta name="theme-color" content="#014cc4">
+    	<meta name="og:title" content="Bender TOS">
+    	<meta name="og:description" content="Terms of Service for using Bender.">
+        <meta name="description" content="Terms of Service for using Bender.">
+    	<meta name="og:image" content="./bender.png">
+    	<meta name="og:site_name" content="Bender Bot">
+    	<meta name="og:url" content="https://benderbot.co/">
+        <link rel="stylesheet" href="./bulmaswatch.min.css">
         <link rel="stylesheet" href="./style.css?v=6969">
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+        <script src="./vue.min.js"></script>
         <script defer src="./stuff_lite.js"></script>
     </head>
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                <a role="button" @click="menu_open = !menu_open" :class="menu_open ? 'is-active navbar-burger burger' : 'navbar-burger burger'" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -28,12 +35,12 @@
                             <strong>Support server</strong>
                         </a>
                         <a class="button is-primary" href="https://dashboard.benderbot.co">
-                            Dashboard
+                            <strong>Dashboard</strong>
                         </a>
                     </div>
                 </div>
             </div>
-            <div id="nmenu" class="navbar-menu">
+            <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/commands">Commands</a>
                     <a class="navbar-item" href="/pro">Bender Pro</a>
