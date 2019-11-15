@@ -262,3 +262,10 @@ hr.thin {
 	text-align: left;
 	width: 48%;
 }
+.small {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    font-size: 9px;
+    color: #b0c6ea;
+}
