@@ -121,7 +121,7 @@ footer.navbar .content {
 	    display: none;
 	}
 	a.navbar-item {
-	    padding: 0;
+	    padding-left: 5px;
 	}
 }
 .icon {
@@ -311,4 +311,7 @@ span.gray {
 }
 .buttons {
     margin-top: 4px;
+}
+.navbar {
+    height: 60px;
 }
