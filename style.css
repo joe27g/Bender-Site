@@ -289,3 +289,15 @@ hr.mid {
     margin-top: 3px;
     display: table;
 }
+span.green {
+    color: #05e005;
+}
+span.yellow {
+    color: #ffc800;
+}
+span.gray {
+    color: #b1b1b1;
+}
+.table.centered {
+    margin: 0 auto;
+}

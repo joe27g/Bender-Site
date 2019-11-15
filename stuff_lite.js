@@ -6,13 +6,13 @@ var vue = new Vue({
 			username: "Joe 🎸",
 			id: "246107833295175681",
 			discriminator: 7070,
-			avatar: "a_9f462d01ef3f66d5f5899dc475fbb08f"
+			avatar: null
 		},
 		dutchman: {
 			username: "Mark.",
 			id: "391743942070370304",
 			discriminator: 9999,
-			avatar: "a_c31d947b788e499ec7d219c09e300879"
+			avatar: null
 		}
 	},
 	methods: {

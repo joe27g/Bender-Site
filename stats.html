@@ -1,0 +1,117 @@
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bender Stats</title>
+        <meta name="theme-color" content="#014cc4">
+    	<meta name="og:title" content="Bender Stats">
+    	<meta name="og:description" content="Information about the current status of Bender.">
+        <meta name="description" content="Information about the current status of Bender.">
+    	<meta name="og:image" content="./bender.png">
+    	<meta name="og:site_name" content="Bender Bot">
+    	<meta name="og:url" content="https://benderbot.co/">
+        <link rel="stylesheet" href="./bulmaswatch.min.css">
+        <link rel="stylesheet" href="./style.css?v=6969">
+        <script src="./vue.min.js"></script>
+        <script defer src="./stuff_stats.js"></script>
+    </head>
+    <body><div id="body">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" @click="menu_open = !menu_open" :class="menu_open ? 'is-active navbar-burger burger' : 'navbar-burger burger'" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item" href="/">
+                    <img class="round" src="./bender.png" height="32">
+                    <span class="title is-5" id="bender-label">&nbsp;Bender</span>
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" href="/support">
+                            <strong>Support server</strong>
+                        </a>
+                        <a class="button is-primary" href="https://dashboard.benderbot.co">
+                            <strong>Dashboard</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/commands">Commands</a>
+                    <a class="navbar-item" href="/invite">Invite to your server</a>
+                    <a class="navbar-item" href="/pro">Bender Pro</a>
+                    <a class="navbar-item" href="/donate">Donate</a>
+                    <a class="navbar-item" href="https://discordservers.me" target="_blank">Server list<div class="small">discordservers.me</div></a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light" href="/support">
+                                <strong>Support server</strong>
+                            </a>
+                            <a class="button is-primary" href="https://dashboard.benderbot.co">
+                                <strong>Dashboard</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="section has-text-centered">
+            <h1 class="title">Overall Statistics</h1>
+            <span class="stat"><strong class="stat-num">{{ botStats.totalGuilds }}</strong><span class="stat-label"> servers</span></span>
+            | <span class="stat"><strong class="stat-num">{{ botStats.totalUsers }}</strong><span class="stat-label"> users</span></span>
+            <span v-if="botStats.sharded">| <span class="stat"><strong class="stat-num">{{ botStats.shardCount }}</strong><span class="stat-label"> shards</span></span></span>
+            | For info on past uptime, see the <a href="https://status.benderbot.co">status website</a>.
+        </section>
+        <hr>
+        <section class="section thin has-text-centered">
+            <h1 class="title">Detailed Statistics</h1>
+            <table class="table centered"><tbody>
+                <tr>
+                    <td>Shard #</td>
+                    <td>Status</td>
+                    <td>Servers available</td>
+                    <td>Last updated</td>
+                </tr>
+                <tr v-for="data in botStats.shardData">
+                    <td>{{ data.shard_id + 1 }}</td>
+                    <td>
+                        <span class="green" v-if="data.status === 0">● Connected</span>
+                        <span class="gray" v-else-if="data.status === 5">● Disconnected</span>
+                        <span class="yellow" v-else>● Connecting</span>
+                    </td>
+                    <td>
+                        <span :class="data.guilds === data.guildsAvaliable ? 'green' : 'yellow'">{{ data.guildsAvaliable }}</span><span class="gray">/{{ data.guilds }}<span></td>
+                    <td>{{ ago(data.lastUpdated) }} ago</td>
+                </tr>
+                <tr v-if="!Object.keys(botStats.shardData).length">
+                    <td>No shard data available.</td>
+                </tr>
+            </tbody></table>
+        </section>
+        <footer class="footer navbar is-fixed-bottom">
+            <div class="navbar-start">
+                <span class="c cb">Created by</span>
+                <span class="user">
+                    <img :src="getAvatar(joe_mama)" class="pfp" :alt="joe_mama.username + '\'s avatar'">
+                    {{ joe_mama.username }}<span class="discrim">#{{ joe_mama.discriminator }}</span>
+                </span>
+                <span class="c cb">with help from</span>
+                <span class="user">
+                    <img :src="getAvatar(dutchman)" class="pfp" :alt="dutchman.username + '\'s avatar'">
+                    {{ dutchman.username }}<span class="discrim">#{{ dutchman.discriminator }}</span>
+                </span>
+            </div>
+            <div class="navbar-end c">
+                <a class="c" href="/tos">Privacy Policy</a> |
+                <a class="c cu" href="mailto:contact@benderbot.co">Contact Us</a>
+            </div>
+        </footer>
+    </div></body>
+</html>
