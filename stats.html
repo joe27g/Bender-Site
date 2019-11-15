@@ -13,9 +13,9 @@
     	<meta name="og:url" content="https://benderbot.co/">
         <meta name="og:image" content="https://benderbot.co/bender.png">
         <link rel="stylesheet" href="./bulmaswatch.min.css">
-        <link rel="stylesheet" href="./style.css?v=69">
+        <link rel="stylesheet" href="./style.css?v=420">
         <script src="./vue.min.js"></script>
-        <script defer src="./stats_yeet.js?v=69"></script>
+        <script defer src="./stats_yeet.js?v=420"></script>
     </head>
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -90,7 +90,7 @@
                     </td>
                     <td>
                         <span :class="data.guilds === data.guildsAvaliable ? 'green' : 'yellow'">{{ data.guildsAvaliable }}</span><span class="gray">/{{ data.guilds }}<span></td>
-                    <td>{{ ago(data.lastUpdated) }} ago</td>
+                    <td><span :class="Date.now() - data.lastUpdated > 300000 ? 'red' : ''">{{ ago(data.lastUpdated) }}</span></td>
                 </tr>
                 <tr v-if="!Object.keys(botStats.shardData).length">
                     <td>No shard data available.</td>

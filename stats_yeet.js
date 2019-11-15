@@ -34,13 +34,13 @@ var vue = new Vue({
 			const diff = Date.now() - date;
 
 			if (diff >= day)
-				return `${Math.floor(diff / day)}d`;
+				return `${Math.floor(diff / day)}d ago`;
 			if (diff >= hr)
-				return `${Math.floor(diff / hr)}h`;
+				return `${Math.floor(diff / hr)}h ago`;
 			if (diff >= min)
-				return `${Math.floor(diff / min)}h`;
+				return `${Math.floor(diff / min)}h ago`;
 			if (diff >= 3000)
-				return `${Math.floor(diff / 1000)}s`;
+				return `${Math.floor(diff / 1000)}s ago`;
 			return `just now`;
 		}
 	}

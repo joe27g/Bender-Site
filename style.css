@@ -303,6 +303,9 @@ span.green {
 span.yellow {
     color: #ffc800;
 }
+span.red {
+    color: #ff1100;
+}
 span.gray {
     color: #b1b1b1;
 }
