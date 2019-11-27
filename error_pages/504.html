@@ -1,57 +1,44 @@
-<html lang="en"><head>
-    <title>504 Gateway Timeout</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style-v2.0.7.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#252e39"
-	    },
-	    "button": {
-	      "background": "#14a7d0"
-	    }
-	  },
-	  "theme": "classic",
-	  "position": "bottom-right",
-	  "content": {
-	    "href": "https://benderbot.co/privacy"
-	  }
-	})});
-	</script>
-</head>
-<body>
-    <section id="header-wrapper">
-        <header>
-            <a class="b" href="/"><img src="/Bender.png" class="b">Bender</a>
-        </header>
-    </section>
-    <section id="nav-wrapper">
-        <div id="header" class="hero">
-            <div class="hero-head">
-                <div class="level">
-                    <div class="level-left">504 Gateway Timeout</div>
-                    <div class="level-right">Join the support server!
-                        <a href="https://discord.gg/99xaeGn" class="discord">
-                            <img src="https://discordapp.com/api/guilds/353660669490626560/embed.png" alt="Discord server">
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bender</title>
+        <meta name="theme-color" content="#014cc4">
+        <link rel="stylesheet" href="./bulmaswatch.min.css">
+        <link rel="stylesheet" href="./style.css?v=6969">
+    </head>
+    <body><div id="body">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img class="round" src="./bender.png" height="32">
+                    <span class="title is-5" id="bender-label">&nbsp;Bender</span>
+                </a>
+            </div>
+			<div class="navbar-buttons" style="display: block;">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" href="/support">
+                            <strong>Support server</strong>
+                        </a>
+                        <a class="button is-primary" href="https://dashboard.benderbot.co">
+                            <strong>Dashboard</strong>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="content-wrapper" class="hero">
-        <div id="donate" class="has-text-centered">
+        </nav>
+        <section class="section has-text-centered">
             <img src="https://mixedupmoose.files.wordpress.com/2015/05/funny-gifs-wake-up-lemming-sheeple.gif" alt="Shit's broke">
             <div class="title is-1">504</div>
             <div class="subtitle is-3">Gateway Timeout</div>
-            <span>Something's wrong with the web server, apparently. ಠ_ಠ If this keeps happening, report it in <a href="https://discord.gg/99xaeGn" target="_blank">Bender's Lair</a>. If not, bite my shiny metal ass.</span>
-        </div>
-    </section>
-</body>
+            <span>Something's wrong with the web server, apparently. ಠ_ಠ If this keeps happening, report it in <a href="/support" target="_blank">Bender's Lair</a>. If not, bite my shiny metal ass.</span>
+    	</section>
+        <footer class="footer navbar is-fixed-bottom">
+            <div class="navbar-end c">
+                <a class="c" href="/tos">Privacy Policy</a> |
+                <a class="c cu" href="mailto:contact@benderbot.co">Contact Us</a>
+            </div>
+        </footer>
+    </div></body>
 </html>

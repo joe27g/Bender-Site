@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bender Commands</title>
+        <title>Bender Stats</title>
         <meta name="theme-color" content="#014cc4">
-    	<meta name="og:title" content="Bender Commands">
-    	<meta name="og:description" content="A list of Bender's 180+ commands with usage details and examples.">
-        <meta name="description" content="A list of Bender's 180+ commands with usage details and examples.">
+    	<meta name="og:title" content="Bender Stats">
+    	<meta name="og:description" content="Information about the current status of Bender.">
+        <meta name="description" content="Information about the current status of Bender.">
     	<meta name="og:image" content="./bender.png">
     	<meta name="og:site_name" content="Bender Bot">
     	<meta name="og:url" content="https://benderbot.co/">
@@ -15,9 +15,7 @@
         <link rel="stylesheet" href="./bulmaswatch.min.css">
         <link rel="stylesheet" href="./style.css?v=1337">
         <script src="./vue.min.js"></script>
-        <script defer src="./simple-markdown.min.js"></script>
-        <script defer src="./stuff_commands.js?v=69"></script>
-        <script defer src="./masonry.pkgd.min.js"></script>
+        <script defer src="./stats_yeet.js?v=420"></script>
     </head>
     <body><div id="body">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -39,14 +37,14 @@
                             <strong>Support server</strong>
                         </a>
                         <a class="button is-primary" href="https://dashboard.benderbot.co">
-                            Dashboard
+                            <strong>Dashboard</strong>
                         </a>
                     </div>
                 </div>
             </div>
             <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="/commands"><u>Commands</u></a>
+                    <a class="navbar-item" href="/commands">Commands</a>
                     <a class="navbar-item" href="/invite">Invite to your server</a>
                     <a class="navbar-item" href="/pro">Bender Pro</a>
                     <a class="navbar-item" href="/donate">Donate</a>
@@ -66,38 +64,39 @@
                 </div>
             </div>
         </nav>
-        <section class="section">
-            <div class="tab-container has-text-centered">
-                <button v-for="(data, group) in commands" @click="selected_group = group" :class="selected_group === group ? 'button is-primary' : 'button'"><a>{{ groupNames[group] }}</a></button>
-            </div>
-            <hr class="thin">
+        <section class="section has-text-centered">
+            <h1 class="title">Overall Statistics</h1>
+            <span class="stat"><strong class="stat-num">{{ botStats.totalGuilds }}</strong><span class="stat-label"> servers</span></span>
+            | <span class="stat"><strong class="stat-num">{{ botStats.totalUsers }}</strong><span class="stat-label"> users</span></span>
+            <span v-if="botStats.sharded">| <span class="stat"><strong class="stat-num">{{ botStats.shardCount }}</strong><span class="stat-label"> shards</span></span></span>
+            | For info on past uptime, see the <a href="https://status.benderbot.co">status website</a>.
         </section>
-        <section class="section ntp">
-            <div v-for="(data, group) in commands" :id="group" class="container has-text-centered" v-show="selected_group === group">
-                <div class="command sizer"></div>
-                <div v-for="command in data" class="command box ib" :id="command.name">
-					<span class="code">{{ prefix }}{{ command.name }}</span> - <span v-html="parseMD(command.description)"></span>
-					<hr class="mid">
-					<div class="usage" v-if="command.format">
-						<span class="category">Usage:</span> <span class="code">{{ prefix }}{{ command.name }} {{ command.format }}</span>
-					</div>
-					<br v-if="command.format">
-                    <div v-html="parseMD(command.details || '')"></div>
-					<br v-if="command.details">
-					<div class="usage aliases" v-if="command.aliases">
-						<span class="category">Aliases: </span>
-						<span v-for="alias in command.aliases" class="code">{{ prefix }}{{ alias }}</span>
-					</div>
-					<div class="usage examples" v-if="command.examples">
-						<span class="category">Examples:</span>
-						<span class="code" v-for="example in command.examples">{{ prefix }}{{ example }}<br></span>
-					</div>
-				</div>
-                <div class="has-text-centered" v-show="!data.length">
-                    <span class="subtitle is-6">No commands in this category.</span>
-                </div>
-            </div>
-    	</section>
+        <hr>
+        <section class="section thin has-text-centered">
+            <h1 class="title">Detailed Statistics</h1>
+            <table class="table centered"><tbody>
+                <tr>
+                    <td>Shard #</td>
+                    <td>Status</td>
+                    <td>Servers available</td>
+                    <td>Last updated</td>
+                </tr>
+                <tr v-for="data in botStats.shardData">
+                    <td>{{ data.shard_id + 1 }}</td>
+                    <td>
+                        <span class="green" v-if="data.status === 0">● Connected</span>
+                        <span class="gray" v-else-if="data.status === 5">● Disconnected</span>
+                        <span class="yellow" v-else>● Connecting</span>
+                    </td>
+                    <td>
+                        <span :class="data.guilds === data.guildsAvaliable ? 'green' : 'yellow'">{{ data.guildsAvaliable }}</span><span class="gray">/{{ data.guilds }}<span></td>
+                    <td><span :class="Date.now() - data.lastUpdated > 300000 ? 'red' : ''">{{ ago(data.lastUpdated) }}</span></td>
+                </tr>
+                <tr v-if="!Object.keys(botStats.shardData).length">
+                    <td>No shard data available.</td>
+                </tr>
+            </tbody></table>
+        </section>
         <footer class="footer navbar is-fixed-bottom">
             <div class="navbar-start">
                 <span class="c cb">Created by</span>

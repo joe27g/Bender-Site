@@ -1,146 +1,142 @@
-<html lang="en"><head>
-	<title>Bender Pro</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="Discord, Bot, Bender, Best, Discord Bot, benderbot, Pro, Premium">
-    <meta name="theme-color" content="#0050C5">
-	<meta name="og:title" content="Bender Pro">
-	<meta name="og:description" content="Purchase Bender Pro to enable new commands and features!">
-    <meta name="description" content="Purchase Bender Pro to enable new commands and features!">
-	<meta name="og:image" content="/Bender-large.png">
-	<meta name="og:site_name" content="Bender Bot">
-	<meta name="og:url" content="https://benderbot.co/">
-	<link rel="stylesheet" href="../style.css?v=208">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
-	<script type="application/ld+json" id="google-breadcrumbs">
-	{
-	  "@context": "http://schema.org",
-	  "@type": "BreadcrumbList",
-	  "itemListElement": [{
-	    "@type": "ListItem",
-	    "position": 1,
-	    "item": {
-	      "@id": "https://benderbot.co",
-	      "name": "Bender Bot"
-	    }
-	  },{
-	    "@type": "ListItem",
-	    "position": 2,
-	    "item": {
-	      "@id": "https://benderbot.co/pro",
-	      "name": "Pro"
-	    }
-	  }]
-	}
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126650650-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-126650650-1');
-	</script>
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#252e39"
-	    },
-	    "button": {
-	      "background": "#14a7d0"
-	    }
-	  },
-	  "theme": "classic",
-	  "position": "bottom-right",
-	  "content": {
-	    "href": "https://benderbot.co/privacy"
-	  }
-	})});
-	</script>
-</head>
-<body>
-	<section id="header-wrapper">
-        <header>
-            <a class="b" href="../"><img src="../Bender.png" class="b" alt="Bender logo">Bender Pro</a>
-        </header>
-    </section>
-    <section id="nav-wrapper">
-        <div id="header" class="hero">
-            <div class="hero-head">
-                <div class="level">
-                    <div class="level-left">Here's why and how you can buy Bender Pro!</div>
-                    <div class="level-right">Join the support server!
-                        <a href="https://discord.gg/99xaeGn" class="discord">
-							<img src="https://discordapp.com/api/guilds/353660669490626560/embed.png" alt="Discord server">
-						</a>
-					</div>
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bender Pro</title>
+        <meta name="theme-color" content="#014cc4">
+    	<meta name="og:title" content="Bender Pro">
+    	<meta name="og:description" content="Unlock dozens more features by purchasing Bender Pro!">
+        <meta name="description" content="Unlock dozens more features by purchasing Bender Pro!">
+    	<meta name="og:image" content="./bender.png">
+    	<meta name="og:site_name" content="Bender Bot">
+    	<meta name="og:url" content="https://benderbot.co/">
+        <link rel="stylesheet" href="./bulmaswatch.min.css">
+        <link rel="stylesheet" href="./style.css?v=1337">
+        <script src="./vue.min.js"></script>
+        <script defer src="./stuff_lite.js?v=69"></script>
+    </head>
+    <body><div id="body">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" @click="menu_open = !menu_open" :class="menu_open ? 'is-active navbar-burger burger' : 'navbar-burger burger'" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item" href="/">
+                    <img class="round" src="./bender.png" height="32">
+                    <span class="title is-5" id="bender-label">&nbsp;Bender</span>
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" href="/support">
+                            <strong>Support server</strong>
+                        </a>
+                        <a class="button is-primary" href="https://dashboard.benderbot.co">
+                            <strong>Dashboard</strong>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="content-wrapper" class="hero">
-        <div id="donate" class="has-text-centered">
-    		<div class="title">Bender Pro!?</div>
-			<div class="subtitle">Bender Pro enables many new features, including:</div>
-			<div class="columns">
-				<ul class="column">
-					<li>- <span class="code">;news</span> ~ Show news for a game, or configure it to automatically be posted in a certain channel.</li>
-					<li>- <span class="code">;roleall</span> ~ Add, remove, or toggle roles for all server members at once.</li>
-					<li>- <span class="code">;nickall</span> ~ Set or reset nicknames of all server members.</li>
-					<li>- <span class="code">;volume</span> ~ Change volume at which Bender plays music.</li>
-					<li>- <span class="code">;autoplay</span> ~ Enable related songs to play after the queue ends.</li>
-					<li>- <span class="code">;backup</span> and <span class="code">;restore</span> ~ Create backups of your server and restore them if something goes wrong.</li>
-				</ul>
-    			<ul class="column">
-					<li>- You can play songs up to 24 hours instead of just 2 hours.</li>
-					<li>- You can have up to 7 autoroles rather than just 1.</li>
-					<li>- Save playlists that you can play on any server with Bender.</li>
-					<li>- Image manipulation commands: <span class="code">;blur</span>, <span class="code">;brightness</span>, <span class="code">;contrast</span>, <span class="code">;deepfry</span>, <span class="code">;graycale</span>, <span class="code">;invert</span>, <span class="code">;jpeg</span>, <span class="code">;mirror</span>, <span class="code">;pulse</span>, <span class="code">;rotate</span>, <span class="code">;saturate</span>, <span class="code">;sepia</span>, <span class="code">;shake</span>, and <span class="code">;spin</span></li>
-					<li>- Meme creation commands: <span class="code">;bobross</span>, <span class="code">;brain</span>, <span class="code">;changemymind</span>, <span class="code">;gay</span>, <span class="code">;gaysingles</span>, <span class="code">;killit</span>, and <span class="code">;steppedinshit</span> and more.</li>
-				</ul>
-			</div>
-			<ul>
-				<li>- More Bender Pro features are planned, such as embeds for welcome messages and the ability to add groups of joinable roles.</li>
-				<li>- If you have an idea for a new feature for Bender Pro, feel free to type it in <a style="background-color:rgba(114,137,218,.1);color:#7289da;" href="https://discordapp.com/channels/353660669490626560/353669122510422017/502875601212932097" target="_blank">#suggestions</a> in Bender's Lair.</li>
-			</ul>
-			<br>
-			<span>Once you link your Discord account, you will also receive the <span style="color: #e8ff00">@Bender Pro User</span> role in Bender's Lair.</span>
-			<br>
-			<span>Purchase via Paypal:</span>
-			<br>
-			<div id="pro_paypal" class="box">
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="HM5RJV54YE6B4">
-					<table><tbody>
-						<tr>
-							<td><input type="hidden" name="on0" value="Packages">Packages</td>
-						</tr>
-						<tr>
-							<td><select name="os0">
-								<option value="1 server">1 server ~ $4.99 USD monthly</option>
-								<option value="3 servers">3 servers ~ $9.99 USD monthly</option>
-								<option value="5 servers">5 servers ~ $14.99 USD monthly</option>
-								<option value="1 server *">1 server ~ $49.99 USD yearly</option>
-								<option value="3 servers *">3 servers ~ $89.99 USD yearly</option>
-								<option value="5 servers *">5 servers ~ $124.99 USD yearly</option>
-							</select></td>
-						</tr>
-					</tbody></table>
-					<input type="hidden" name="currency_code" value="USD">
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
-				</form>
-			</div>
-		</div>
-	</section>
-	<section class="footer has-text-centered" id="info-footer">
-		© 2019 Bender Bot. <a href="/tos">Privacy Policy</a> | <a href="mailto:contact@benderbot.co">Contact Us</a>
-	</section>
-</body>
+            <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/commands">Commands</a>
+                    <a class="navbar-item" href="/invite">Invite to your server</a>
+                    <a class="navbar-item" href="/pro"><u>Bender Pro</u></a>
+                    <a class="navbar-item" href="/donate">Donate</a>
+                    <a class="navbar-item" style="margin-top:-7px" href="https://discordservers.me" target="_blank">Server List<div class="small">discordservers.me</div></a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light" href="/support">
+                                <strong>Support server</strong>
+                            </a>
+                            <a class="button is-primary" href="https://dashboard.benderbot.co">
+                                <strong>Dashboard</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="section">
+            <div class="centered-container">
+                <h1 class="title">💎 Bender Pro</h1>
+                <h2 class="subtitle">Bender Pro enables lots of new features, including: </h2>
+                <div id="pro" class="columns">
+                    <ul class="column">
+                        <li>- Image manipulation commands: <span class="code">;blur</span>, <span class="code">;brightness</span>, <span class="code">;contrast</span>, <span class="code">;deepfry</span>, <span class="code">;graycale</span>, <span class="code">;invert</span>, <span class="code">;jpeg</span>, <span class="code">;mirror</span>, <span class="code">;pulse</span>, <span class="code">;rotate</span>, <span class="code">;saturate</span>, <span class="code">;sepia</span>, <span class="code">;shake</span>, and <span class="code">;spin</span></li>
+    					<li>- Meme creation commands: <span class="code">;bobross</span>, <span class="code">;brain</span>, <span class="code">;changemymind</span>, <span class="code">;gay</span>, <span class="code">;gaysingles</span>, <span class="code">;killit</span>, <span class="code">;steppedinshit</span>, and more.</li>
+
+    					<li>- <span class="code">;news</span> ~ Show news for a game, or configure it to automatically be posted in a certain channel.</li>
+    					<li>- You can have up to 7 autoroles rather than just 1.</li>
+    				</ul>
+                    <ul class="column">
+                        <li>- <span class="code">;roleall</span> ~ Add, remove, or toggle roles for all server members at once.</li>
+    					<li>- <span class="code">;nickall</span> ~ Set or reset nicknames of all server members.</li>
+                        <li>- <span class="code">;volume</span> ~ Change volume at which Bender plays music.</li>
+                        <li>- <span class="code">;autoplay</span> ~ Enable related songs to play after the queue ends.</li>
+    					<li>- You can play songs up to 24 hours instead of just 2 hours.</li>
+    					<li>- Save playlists that you can play on any server with Bender.</li>
+    				</ul>
+                </div>
+            </div>
+            <br>
+            <div class="container has-text-centered">
+                <span>More Bender Pro features are in development, and we're open to suggestions on what to add.<br>If you have an idea for a new feature, feel free to type it in <a style="background-color:rgba(114,137,218,.1);color:#7289da;" href="https://discordapp.com/channels/353660669490626560/353669122510422017" target="_blank">#suggestions</a> in Bender's Lair.</span>
+                <br>
+                <br>
+                <span>After purchasing and linking your Discord account on the <a href="https://dashboard.benderbot.co" target="_blank">dashboard</a>, you will also receive the <span style="color: #e8ff00">@Bender Pro</span> role in Bender's Lair.</span>
+            </div>
+            <br>
+            <div class="container has-text-centered">
+                <div id="pro_paypal" class="box ib">
+    				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    					<input type="hidden" name="cmd" value="_s-xclick">
+    					<input type="hidden" name="hosted_button_id" value="HM5RJV54YE6B4">
+    					<table><tbody>
+    						<tr>
+    							<td><input type="hidden" name="on0" value="Packages">Packages</td>
+    						</tr>
+    						<tr>
+    							<td><select name="os0">
+    								<option value="1 server">1 server ~ $4.99 USD monthly</option>
+    								<option value="3 servers">3 servers ~ $9.99 USD monthly</option>
+    								<option value="5 servers">5 servers ~ $14.99 USD monthly</option>
+    								<option value="1 server *">1 server ~ $49.99 USD yearly</option>
+    								<option value="3 servers *">3 servers ~ $89.99 USD yearly</option>
+    								<option value="5 servers *">5 servers ~ $124.99 USD yearly</option>
+    							</select></td>
+    						</tr>
+    					</tbody></table>
+    					<input type="hidden" name="currency_code" value="USD">
+    					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
+    				</form>
+    			</div>
+            </div>
+        </section>
+        <footer class="footer navbar is-fixed-bottom">
+            <div class="navbar-start">
+                <span class="c cb">Created by</span>
+                <span class="user">
+                    <img :src="getAvatar(joe_mama)" class="pfp" :alt="joe_mama.username + '\'s avatar'">
+                    {{ joe_mama.username }}<span class="discrim">#{{ joe_mama.discriminator }}</span>
+                </span>
+                <span class="c cb">with help from</span>
+                <span class="user">
+                    <img :src="getAvatar(dutchman)" class="pfp" :alt="dutchman.username + '\'s avatar'">
+                    {{ dutchman.username }}<span class="discrim">#{{ dutchman.discriminator }}</span>
+                </span>
+            </div>
+            <div class="navbar-end c">
+                <a class="c" href="/tos">Privacy Policy</a> |
+                <a class="c cu" href="mailto:contact@benderbot.co">Contact Us</a>
+            </div>
+        </footer>
+    </div></body>
 </html>

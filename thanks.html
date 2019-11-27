@@ -1,65 +1,93 @@
-﻿<html lang="en"><head>
-	<title>Thank you for your contribution!</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#0050C5">
-	<link rel="stylesheet" href="../style.css?v=208">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulmaswatch/0.6.2/darkly/bulmaswatch.min.css">
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-	<script>
-	window.addEventListener("load", function(){
-	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#252e39"
-	    },
-	    "button": {
-	      "background": "#14a7d0"
-	    }
-	  },
-	  "theme": "classic",
-	  "position": "bottom-right",
-	  "content": {
-	    "href": "https://benderbot.co/privacy"
-	  }
-	})});
-	</script>
-</head>
-<body>
-	<section id="header-wrapper">
-        <header>
-            <a class="b" href="../"><img src="../Bender.png" class="b" alt="Bender logo">Bender</a>
-        </header>
-    </section>
-    <section id="nav-wrapper">
-        <div id="header" class="hero">
-            <div class="hero-head">
-                <div class="level">
-                    <div class="level-left">Transaction successful!</div>
-                    <div class="level-right">Join the support server!
-                        <a href="https://discord.gg/99xaeGn" class="discord">
-						<img src="https://discordapp.com/api/guilds/353660669490626560/embed.png" alt="Discord server">
-    </a></div>
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thank you!</title>
+        <meta name="theme-color" content="#014cc4">
+        <link rel="stylesheet" href="./bulmaswatch.min.css">
+        <link rel="stylesheet" href="./style.css?v=1337">
+        <script src="./vue.min.js"></script>
+        <script defer src="./stuff_lite.js?v=69"></script>
+    </head>
+    <body><div id="body">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" @click="menu_open = !menu_open" :class="menu_open ? 'is-active navbar-burger burger' : 'navbar-burger burger'" aria-label="menu" aria-expanded="false" data-target="nmenu" id="nmenu-button">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <a class="navbar-item" href="/">
+                    <img class="round" src="./bender.png" height="32">
+                    <span class="title is-5" id="bender-label">&nbsp;Bender</span>
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light" href="/support">
+                            <strong>Support server</strong>
+                        </a>
+                        <a class="button is-primary" href="https://dashboard.benderbot.co">
+                            <strong>Dashboard</strong>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="content-wrapper" class="hero">
-        <div id="donate" class="has-text-centered">
-		    <div class="title is-1">Thank you!</div>
-			<div class="subtitle">Your contribution will be used for Bender's development, including new features and hardware upgrades!</div>
+            <div id="nmenu" :class="menu_open ? 'is-active navbar-menu' : 'navbar-menu'">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/commands">Commands</a>
+                    <a class="navbar-item" href="/invite">Invite to your server</a>
+                    <a class="navbar-item" href="/pro">Bender Pro</a>
+                    <a class="navbar-item" href="/donate">Donate</a>
+                    <a class="navbar-item" style="margin-top:-7px" href="https://discordservers.me" target="_blank">Server List<div class="small">discordservers.me</div></a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-light" href="/support">
+                                <strong>Support server</strong>
+                            </a>
+                            <a class="button is-primary" href="https://dashboard.benderbot.co">
+                                <strong>Dashboard</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="section has-text-centered">
+            <div class="title is-1">Thank you!</div>
+			<div class="subtitle">Thank you for purchasing Bender Pro!</div>
+        </section>
+        <hr>
+        <section class="section thin has-text-centered">
 			<span>
-				If you arrived at this page after purchasing <a href="/pro">Bender Pro</a>, you should have received <span style="color: #008800;">@Donor</span>, <span style="color: #00bb00">@Supporter</span>, and/or <span style="color: #00ff00">@Sponsor</span> roles.<br>
-				Otherwise, please allow up to 24 hours for server staff to add your roles manually.
-				<br>If you have not received them after that time, contact <span class="code">Joe 🎸#7070</span>.<br>
-				<br>
-				Check out the beta version of the <a href="https://dashboard.benderbot.co" target="_blank">dashboard</a>!<br>
-				Here, you can assign Bender Pro status to servers and view server settings. Soon™ you will be able to modify settings here too.
+                To unlock your new features, please visit the <a href="https://dashboard.benderbot.co">dashboard</a>, link your Discord and PayPal accounts, and assign Bender Pro to the server(s) where you want to use it.
+                <br><br>
+				If you've joined the support server, you should have already received the <span style="color: rgb(232, 255, 0);">@Bender Pro</span> role.
+                <br>
+                If you have any questions, please feel free to ask in <a style="background-color:rgba(114,137,218,.1);color:#7289da;" href="https://discordapp.com/channels/353660669490626560/384846960093298688" target="_blank">#support</a> in Bender's Lair.
 			</span>
-		</div>
-	</section>
-	<section class="footer has-text-centered" id="info-footer">
-		© 2019 Bender Bot. <a href="/tos">Privacy Policy</a> | <a href="mailto:contact@benderbot.co">Contact Us</a>
-	</section>
-</body></html>
+        </section>
+        <footer class="footer navbar is-fixed-bottom">
+            <div class="navbar-start">
+                <span class="c cb">Created by</span>
+                <span class="user">
+                    <img :src="getAvatar(joe_mama)" class="pfp" :alt="joe_mama.username + '\'s avatar'">
+                    {{ joe_mama.username }}<span class="discrim">#{{ joe_mama.discriminator }}</span>
+                </span>
+                <span class="c cb">with help from</span>
+                <span class="user">
+                    <img :src="getAvatar(dutchman)" class="pfp" :alt="dutchman.username + '\'s avatar'">
+                    {{ dutchman.username }}<span class="discrim">#{{ dutchman.discriminator }}</span>
+                </span>
+            </div>
+            <div class="navbar-end c">
+                <a class="c" href="/tos">Privacy Policy</a> |
+                <a class="c cu" href="mailto:contact@benderbot.co">Contact Us</a>
+            </div>
+        </footer>
+    </div></body>
+</html>
