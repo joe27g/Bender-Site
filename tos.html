@@ -13,7 +13,7 @@
     	<meta name="og:url" content="https://benderbot.co/">
         <meta name="og:image" content="https://benderbot.co/bender.png">
         <link rel="stylesheet" href="./bulmaswatch.min.css">
-        <link rel="stylesheet" href="./style.css?v=1337">
+        <link rel="stylesheet" href="./style.css?v=1337.69">
         <script src="./vue.min.js"></script>
         <script defer src="./stuff_lite.js?v=69"></script>
     </head>
@@ -72,7 +72,7 @@
     				<div class="title is-5 is-marginless">Cloudflare</div>
     				<span class="subtitle is-6 is-marginless">Discord (discordapp.com) uses Cloudflare (cloudflare.com) to serve their assets, some of which are used on this website. Some other assets on this website are also loaded directly from Cloudflare. As a result, cookies from these three sources are created when these assets are served. These cookies include, but are not necessarily limited to, an ID for your request that is used to help serve content more effectively. For more information, please see the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>.</span>
     				<br><br>
-    				<span>Upon visiting <a href="https://dashboard.benderbot.co">the dashboard</a>, cookies are created when you log in with Discord/PayPal. This is necessary for the dashboard to function, and the cookies created are tokens that are used to obtain information from the Discord and PayPal APIs. This information is not stored based on the usage of this website; it is only used temporarily to authenticate a user. They serve no other purpose and are deleted automatically when you log out.</span>
+    				<span>Upon visiting <a href="https://dashboard.benderbot.co">the dashboard</a>, cookies are created when you log in with Discord/PayPal. This is necessary for the dashboard to function, and the cookies created are tokens that are used to obtain information from the Discord and PayPal APIs. This information is only used temporarily to authenticate users and is deleted automatically when you log out.</span>
     			</div>
     			<br>
     			<div class="notification is-info">By continuing to use this website, you agree to the collection of the data listed above. If you would not like any or all of this data to be collected, you may either disable cookies in your browser altogether, block the cookies from specific service(s) listed above, or clear your cookies and stop using this website. Note: If you disable or block cookies, this website may not work correctly.</div>
@@ -81,13 +81,14 @@
             <br>
             <div class="container">
     			<div class="title is-4 is-marginless">Terms of Service</div>
-    			<span class="subtitle is-6 is-marginless">The following applies to usage of the Bender Discord bot: (referred to as "Bender")</span>
+                <span class="subtitle is-6 is-marginless">The following applies to usage of the Bender Discord bot: (referred to as "Bender")</span>
+                <span class="subtitle is-6 is-marginless">Also, "server" refers to a Discord guild and "server staff" refers to a guild's owner, administrators, and/or moderators.</span>
     			<br><br>
         		<div id="user_content" class="tos-section">
         			<div class="title is-5 is-marginless">User content</div>
     				<ul class="tos-list">
-    					<li>Bender's owner(s) are not responsible for user content uploaded or distributed via Bender.</li>
-    					<li>Your content may be deleted or changed at any time if it is found objectionable.</li>
+    					<li>Bender's developers are not responsible for user content uploaded or distributed via Bender.</li>
+    					<li>Your content may be partially or completely deleted at any time if it is found objectionable.</li>
     				    <li>If you see any content stored or distributed via Bender that is illegal or otherwise objectionable, report it to staff of the <a href="https://discord.gg/99xaeGn">support server</a>.</li>
     				    <li>Misuse of content distribution via Bender may result in your access being removed and/or a report being submitted to Discord if the content breaks any laws or applicable terms of service.</li>
         			</ul>
@@ -95,38 +96,46 @@
     			<div id="availability" class="tos-section">
     			    <div class="title is-5 is-marginless">Availability</div>
     				<ul class="tos-list">
-    					<li>Bender is provided as-is. There are no guarantees that it will be available in the future, and its purpose or availability may be changed at any time.</li>
-    				    <li>Any "premium" features are not guaranteed. They may also change or be revoked for any or all users at any time.</li>
-    				    <li>Your permission to use Bender may be changed or revoked at any time, for any reason, without notice.</li>
+    					<li>Bender is provided as-is. Its uptime is not guaranteed and availability may be changed at any time.</li>
+    				    <li>Premium features are not guaranteed; they may be changed or disabled as necessary.</li>
+    				    <li>Your permission to use Bender may be changed or revoked at any time. Blocked users may or may not be notified depending on context.</li>
     			    </ul>
     			</div>
     			<div id="temp" class="tos-section">
         			<div class="title is-5 is-marginless">Temporary data collection</div>
     				<div class="subtitle is-6 is-marginless">Bender temporarily collects data including, but not limited to:</div>
     				<ul class="tos-list">
-    					<li>Timestamps, guild names, and channel names detailing when specific commands are used</li>
-    					<li>Content of and metadata associated with edited messages</li>
-    					<li>Names and IDs of guilds it has been added to</li>
-    				    <li>Data about some or all messages sent within the last day</li>
-    				    <li>Error logs, which may include detailed information about command usage.</li>
+    					<li>Names and IDs of guilds it has been added to. This is stored in a temporary log file and is only accessible by Bender's developers.</li>
+                        <li>Error logs, which may include information about commands and arguments used. This is also stored in a log file for developer use.</li>
+                        <li>Edited and deleted messages, which are kept in volatile memory for up to a day. These are accessible to different users depending on the permissions set by server staff.</li>
             		</ul>
-    				<div class="subtitle is-6 is-marginless">This content may be stored for up to a month, and is only accessible by Bender's owner(s).</div>
     			</div>
     			<div id="perm" class="tos-section">
     			    <div class="title is-5 is-marginless">Permanent data collection</div>
     				<span class="subtitle is-6 is-marginless">Bender collects the following information permanently in a database:</span>
     				<br>
     				<ul class="tos-list">
-    					<li>Username and nickname history</li>
-    				</ul>
-    				<br>
-    				<span class="subtitle is-6 is-marginless">As well as the following, if enabled by server staff:</span>
+                        <li>Username and nickname history, used for the ;names command</li>
+                        <li>Reminders and saved playlists, which can only be seen by the user that created them</li>
+                        <li>After purchasing Bender Pro, data from PayPal is collected and used to validate subscriptions. This includes: <ul class="tos-list">
+                            <li>Name and email, used only for displaying to the user to indicate which PayPal account is linked</li>
+                            <li>Unique PayPal ID, used to identify the user and link them to the subscription they purchased</li>
+                            <li>Transaction ID and timestamp, used to determine the length of the subscription</li>
+                            <li>Plan information, including the number of servers selected, length of the subscrption, and amount paid.</li>
+                        </ul></li>
+                    </ul>
+                    <br>
+                    <span class="subtitle is-6 is-marginless">Some or all of this information can be deleted by request; Email contact@benderbot.co or send one of the developers a DM.</span>
+                    <br>
+                    <br>
+    				<span class="subtitle is-6 is-marginless">If moderation logging is enabled in the server, the following is also collected in the database:</span>
     				<br>
     				<ul class="tos-list">
-    					<li>Details about when and by whom users were muted, kicked, banned, etc.</li>
+                        <li>Details about when and by whom users were muted, kicked, banned, etc. This does not include usernames or discriminators, only IDs.</li>
+                        <li>Since these features are customizable, you'll need to contact the staff of your server to know exactly what is being collected.</li>
     				</ul>
     				<br>
-    				<span class="subtitle is-6 is-marginless">These may also be collected, if enabled by server staff, but are stored only in log channels and <u>not</u> in a database.</span>
+    				<span class="subtitle is-6 is-marginless">These may also be collected, if enabled in the server, but are stored only in log channels and <u>not</u> in a database.</span>
     				<br>
     				<ul class="tos-list">
     					<li>Logs of deleted messages with contents, authors, and IDs, and timestamps</li>

@@ -153,6 +153,7 @@ footer.navbar .content {
     padding: 2px 14px 2px 2px;
     display: inline-block;
 	vertical-align: middle;
+    min-height: 35px;
 }
 .user > .pfp {
     border-radius: 50%;
@@ -240,7 +241,11 @@ footer.navbar, footer .navbar-end, footer .navbar-start {
     float: right;
 }
 ul.tos-list {
-    list-style: inside !important;
+    list-style: inside;
+}
+ul.tos-list > li > ul.tos-list {
+    list-style-type: circle;
+    margin-left: 20px;
 }
 .tos-section + .tos-section > .title {
     margin-top: 20px !important;
