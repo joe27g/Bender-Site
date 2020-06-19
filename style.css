@@ -280,10 +280,14 @@ hr.thin {
 .command {
 	margin: 7px !important;
 	text-align: left;
-	width: 48%;
+    width: 48%;
+    transition: background-color 300ms;
 }
 .command.sizer {
 	margin: 0 !important;
+}
+.command.highlighted {
+    background-color: #694e1b;
 }
 .small {
     position: absolute;

@@ -36,6 +36,7 @@ var vue = new Vue({
 		},
 		prefix: ';',
 		selected_group: "settings",
+		highlighted_command: null,
 		joe_mama: {
 			username: "Joe 🎸",
 			id: "246107833295175681",
@@ -65,9 +66,34 @@ var vue = new Vue({
 					percentPosition: true
 				});
 			});
+		},
+		highlighted_command: function(cmd_name) {
+			if (!cmd_name) return;
+			const cmdElement = document.getElementById(cmd_name);
+			if (!cmdElement) return;
+			setTimeout(() => cmdElement.scrollIntoView({ behavior: 'smooth', block: 'center' }));
+			setTimeout(() => vue.highlighted_command = null, 5000);
 		}
 	}
 });
+
+window.onhashchange = processHash;
+
+function processHash(oldURL, newURL = window.location.href) {
+	let hash = newURL.match(/#(.+)?$/) ? newURL.match(/#(.+)?$/)[1] : undefined;
+	if (!hash || oldURL == newURL) return;
+
+	let cmd;
+	for (const group in vue.commands) {
+		if (!Array.isArray(vue.commands[group])) break;
+		cmd = vue.commands[group].find(c => c.name === hash.toLowerCase() || (c.aliases && c.aliases.includes(hash.toLowerCase())));
+		if (cmd) break;
+	}
+	if (cmd) {
+		vue.selected_group = cmd.group;
+		vue.highlighted_command = cmd.name;
+	}
+}
 
 fetch('https://api.benderbot.co/commands_devs').then(response => {
 	if (response.ok) {
@@ -78,6 +104,7 @@ fetch('https://api.benderbot.co/commands_devs').then(response => {
 					itemSelector: '.command.box',
 					percentPosition: true
 				});
+				setTimeout(processHash);
 			});
 			vue.joe_mama = obj.devs.joe;
 			vue.dutchman = obj.devs.mark;
