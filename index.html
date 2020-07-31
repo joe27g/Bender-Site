@@ -92,8 +92,8 @@
         <section class="section thin has-text-centered">
             <div class="container">
                 <p>
-                    Currently powering <span class="stat"><strong class="stat-num">{{ botStats.totalGuilds }}</strong><span class="stat-label"> servers</span></span>
-                    with <span class="stat"><strong class="stat-num">{{ botStats.totalUsers }}</strong><span class="stat-label"> users</span></span>
+                    Currently powering <span class="stat"><strong class="stat-num">{{ (botStats.totalGuilds || 0).toLocaleString() }}</strong><span class="stat-label"> servers</span></span>
+                    with <span class="stat"><strong class="stat-num">{{ (botStats.totalUsers || 0).toLocaleString() }}</strong><span class="stat-label"> users</span></span>
                     <span v-if="botStats.sharded">on <span class="stat"><strong class="stat-num">{{ botStats.shardCount }}</strong><span class="stat-label"> shards</span></span></span>
                     &nbsp;-&nbsp; &nbsp;For details see the <a href="/stats">stats page</a> or the <a href="https://status.benderbot.co">status website</a>.
                 </p>
