@@ -13,7 +13,8 @@ var vue = new Vue({
 			id: "391743942070370304",
 			discriminator: 9999,
 			avatar: null
-		}
+		},
+		prefix: ';'
 	},
 	methods: {
 		getAvatar: (userObject, size = 32) => {
