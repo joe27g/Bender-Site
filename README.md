@@ -1,4 +1,14 @@
 # Bender Site
-Basically just a backup of Bender's website.
+Source code and assets for https://benderbot.co. **New & improved using Next.js with app routing!**
 
-This will be used to track issues in the site, pull requests etc. The only new thing here is the source for `games.php`, so have fun with that.
+If for some reason you want to host a copy of the site, setup is simple:
+
+- Clone the repo
+
+- Run `npm i`
+
+- In `constants.ts`, modify `LOCAL_API_URL` to be the same as `API_BASE_URL` as you won't have direct access
+
+- Run `npm run build` (or `npx next build`)
+
+- Run `npm start` (or `npx next start`)
