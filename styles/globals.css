@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: FuturamaBold;
+	src: url(/fr-bold.woff2);
+}
+
+#content a[href]:not([class*='text-']), #footer a[href] {
+    color: #29f;
+    transition: color .2s ease-in-out;
+}
+#content a[href]:not([class*='text-']):hover, #footer a[href]:hover {
+    color: #3bf;
+}
+
+/* fix styling for simple-markdown elements */
+code {
+    display: inline-block;
+    font-size: 0.875rem;
+    background-color: rgba(255,255,255,0.2);
+    padding: 0 0.25em 0.1em;
+    border-radius: 0.5em;
+}
+div.paragraph {
+    display: inline;
+}
+.description, .details {
+    white-space: pre-line;
+}
