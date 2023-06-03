@@ -8,7 +8,14 @@ export const WIKI_URL = 'https://wiki.benderbot.co';
 export const API_BASE_URL = 'https://api.benderbot.co'; // for client-side fetching
 
 export const PREFIX = ';';
-export const BOT_ID = '300800171988484096';
+export const SUPPORT = 'https://discord.gg/99xaeGn';
+
+const inviteLink = (id: string) => `https://discord.com/oauth2/authorize?client_id=${id}&scope=bot+applications.commands&permissions=1547037910`;
+
+export const INVITE = inviteLink('300800171988484096');
+export const INVITE_PRO = inviteLink('844692451062185995');
+export const INVITE_BETA = inviteLink('319160231726809098');
+export const INVITE_ALPHA = inviteLink('713530029904101457');
 
 export const NAV_PAGES: NavLinkProps[] = [{
     name: 'Commands',

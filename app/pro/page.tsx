@@ -47,7 +47,7 @@ export default async function Pro() {
                     <div>
                         <FontAwesomeIcon icon={faServer} className='text-xl mr-2 text-lime-600 dark:text-lime-400 w-5' />
                         <span>A separate instance of the bot with better performance and uptime. After you've linked your account, add it </span>
-                        <Link href='/invite_premium' target='_blank'>here</Link>
+                        <Link href='/invite_pro' target='_blank'>here</Link>
                         <span>.</span>
                     </div>
                     <div>
