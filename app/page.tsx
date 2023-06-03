@@ -2,15 +2,15 @@ import { faBookBookmark, faClipboardList, faHammer, faIcons, faImage, faList, fa
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
-import { get } from 'superagent';
-import { LOCAL_API_URL, STATUS_URL, WIKI_URL } from '../constants';
+import superagent from 'superagent';
+import { STATUS_URL, WIKI_URL } from '../constants';
 import { APIResult } from '../types';
 import User from '../components/user';
 import Statistic from '../components/statistic';
 import Separator from '../components/separator';
 
 async function getStatsAndSponsors(): Promise<APIResult> {
-    const res = await get(`${LOCAL_API_URL}/stats_sponsors_devs`);
+    const res = await superagent.get(`${process.env.LOCAL_API_URL}/stats_sponsors_devs`);
     if (!res?.body) {
         return {};
     }

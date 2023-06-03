@@ -2,11 +2,10 @@ import Link from 'next/link';
 
 import User from './user';
 import { UserProps } from '../types';
-import { get } from 'superagent';
-import { LOCAL_API_URL } from '../constants';
+import superagent from 'superagent';
 
 async function getDevs(): Promise<UserProps[]> {
-    const res = await get(`${LOCAL_API_URL}/devs`);
+    const res = await superagent.get(`${process.env.LOCAL_API_URL}/devs`);
     if (!res?.body) {
         return [];
     }

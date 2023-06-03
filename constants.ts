@@ -5,10 +5,10 @@ export const CONTACT_EMAIL = 'contact@benderbot.co';
 export const DASHBOARD_URL = 'https://dashboard.benderbot.co';
 export const STATUS_URL = 'https://status.benderbot.co';
 export const WIKI_URL = 'https://wiki.benderbot.co';
-export const LOCAL_API_URL = 'https://api.benderbot.co'; // TODO: change for prod
-export const API_BASE_URL = 'https://api.benderbot.co';
+export const API_BASE_URL = 'https://api.benderbot.co'; // for client-side fetching
 
 export const PREFIX = ';';
+export const BOT_ID = '300800171988484096';
 
 export const NAV_PAGES: NavLinkProps[] = [{
     name: 'Commands',

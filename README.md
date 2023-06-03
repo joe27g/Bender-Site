@@ -7,7 +7,7 @@ If for some reason you want to host a copy of the site, setup is simple:
 
 - Run `npm i`
 
-- In `constants.ts`, modify `LOCAL_API_URL` to be the same as `API_BASE_URL` as you won't have direct access
+- Copy `example.env` to `.env.local` and modify as necessary
 
 - Run `npm run build` (or `npx next build`)
 

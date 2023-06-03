@@ -1,12 +1,11 @@
-import { LOCAL_API_URL } from '../../constants';
 import { Metadata } from 'next';
 import { CommandResult } from '../../types';
-import { get } from 'superagent';
+import superagent from 'superagent';
 import CommandList from '../../components/commandList';
 
 
 async function getCommands(): Promise<CommandResult | null> {
-    const res = await get(`${LOCAL_API_URL}/commands_devs`); //TODO: remove devs from this route
+    const res = await superagent.get(`${process.env.LOCAL_API_URL}/commands_devs`); //TODO: remove devs from this route
     if (!res?.body?.commands) {
         return null;
     }

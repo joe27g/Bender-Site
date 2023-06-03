@@ -1,14 +1,14 @@
 import { faArrowTrendUp, faFrog, faGem, faImage, faNewspaper, faServer, faStar, faUsersCog, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { DASHBOARD_URL, LOCAL_API_URL, PREFIX, WIKI_URL } from '../../constants';
+import { DASHBOARD_URL, PREFIX, WIKI_URL } from '../../constants';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { CommandResult } from '../../types';
-import { get } from 'superagent';
+import superagent from 'superagent';
 
 
 async function getCommands(): Promise<CommandResult | null> {
-    const res = await get(`${LOCAL_API_URL}/commands_devs`); //TODO: remove devs from this route
+    const res = await superagent.get(`${process.env.LOCAL_API_URL}/commands_devs`); //TODO: remove devs from this route
     if (!res?.body?.commands) {
         return null;
     }
