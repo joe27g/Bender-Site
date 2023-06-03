@@ -1,9 +1,9 @@
-import { Metadata } from "next";
-import Separator from "../../components/separator";
-import Link from "next/link";
-import { CONTACT_EMAIL, DASHBOARD_URL, PREFIX } from "../../constants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCookieBite, faScroll } from "@fortawesome/free-solid-svg-icons";
+import { Metadata } from 'next';
+import Separator from '../../components/separator';
+import Link from 'next/link';
+import { CONTACT_EMAIL, DASHBOARD_URL, PREFIX } from '../../constants';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCookieBite, faScroll } from '@fortawesome/free-solid-svg-icons';
 
 export const metadata: Metadata = {
     title: 'Bender TOS',
