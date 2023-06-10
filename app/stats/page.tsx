@@ -1,5 +1,4 @@
 'use client';
-import { Metadata } from 'next';
 import superagent from 'superagent';
 import useSWR from 'swr';
 import Separator from '../../components/separator';
@@ -66,11 +65,6 @@ function LastUpdated({ lastUpdated }: LastUpdatedProps) {
     }
     return <td className='py-2 px-4'>{ ago(lastUpdated) }</td>
 }
-
-export const metadata: Metadata = {
-    title: 'Bender Stats',
-    description: 'Real-time statistics on the status of Bender.'
-};
 
 export default function Stats() {
     const { data } = useSWR('/stats', async url => {
