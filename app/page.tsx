@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 import superagent from 'superagent';
-import { STATUS_URL, WIKI_URL } from '../constants';
+import { WIKI_URL } from '../constants';
 import { APIResult } from '../types';
 import User from '../components/user';
-import Statistic from '../components/statistic';
 import Separator from '../components/separator';
+import StatsBar from '../components/statsBar';
 
 async function getStatsAndSponsors(): Promise<APIResult> {
     const res = await superagent.get(`${process.env.LOCAL_API_URL}/stats_sponsors_devs`);
@@ -72,17 +72,7 @@ export default async function LandingPage() {
                 </div>
             </div>
             <Separator />
-            <div id='quickStats' className='mx-5 mb-2 lg:mb-0'>
-                Currently powering
-                <Statistic num={data?.stats?.totalGuilds} label='servers' />
-                with
-                <Statistic num={data?.stats?.totalUsers} label='users' />
-                { data?.stats?.sharded ? <span>
-                    on
-                    <Statistic num={data?.stats?.shardCount} label='shards' />
-                </span> : <></>}
-                &nbsp;-&nbsp;&nbsp;&nbsp;For details see the <Link href='/stats'>stats page</Link> or the <Link href={STATUS_URL}>status website</Link>.
-            </div>
+            <StatsBar descriptive refreshInterval={60000}/>
             <Separator />
             <div id='sponsors' className='my-4'>
                 <h1 className='text-3xl'>Sponsors</h1>

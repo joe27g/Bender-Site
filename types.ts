@@ -29,7 +29,18 @@ export type BotStats = {
     sharded: boolean,
     totalGuilds: number,
     totalUsers: number,
-    shardCount: number
+    shardCount: number,
+    shardData?: Record<number, ShardData>
+}
+
+export type ShardData = {
+    shard_id: number,
+    status: number,
+    ping: number,
+    roundtrip: number | null,
+    lastUpdated: number,
+    guilds: number,
+    guildsAvaliable: number // TODO: fix typo on backend
 }
 
 export type APIResult = {

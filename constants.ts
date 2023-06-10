@@ -1,4 +1,4 @@
-import { faBookBookmark, faClipboardList, faGem, faLink, faMessage, faScroll, faUserCog } from '@fortawesome/free-solid-svg-icons';
+import { faArrowTrendUp, faBookBookmark, faClipboardList, faGem, faLink, faMessage, faScroll, faUserCog } from '@fortawesome/free-solid-svg-icons';
 import { Group, NavLinkProps } from './types';
 
 export const CONTACT_EMAIL = 'contact@benderbot.co';
@@ -26,9 +26,9 @@ export const NAV_PAGES: NavLinkProps[] = [{
     href: '/pro',
     icon: faGem
 }, {
-    name: 'Wiki',
-    href: WIKI_URL,
-    icon: faBookBookmark
+    name: 'Stats',
+    href: '/stats',
+    icon: faArrowTrendUp
 }, {
     name: 'TOS',
     href: '/tos',
@@ -39,6 +39,10 @@ export const NAV_BUTTONS: NavLinkProps[] = [{
     name: 'Invite to your server',
     href: '/invite',
     icon: faLink
+}, {
+    name: 'Wiki',
+    href: WIKI_URL,
+    icon: faBookBookmark
 }, {
     name: 'Support',
     href: '/support',

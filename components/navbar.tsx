@@ -35,7 +35,7 @@ export default function Navbar({ pages, buttons }: NavbarProps) {
                 <div className='hidden md:block'>
                     <div className='ml-5 flex items-baseline space-x-2'>
                         {pages.map((item, index) => {
-                            const isActive = useSelectedLayoutSegment() === item.href;
+                            const isActive = useSelectedLayoutSegment() === item.href.substring(1);
                             return <Link
                                 href={item.href}
                                 key={index}
@@ -55,6 +55,7 @@ export default function Navbar({ pages, buttons }: NavbarProps) {
                 {buttons.map((item, index) => <Link
                     href={item.href}
                     key={index}
+                    target='_blank'
                     className='button inline-block px-3 py-2 rounded-md transition-all text-zinc-300 bg-blue-700 hover:bg-blue-600 hover:text-white'
                 >
                     <FontAwesomeIcon icon={item.icon} className='inline-block mr-2' />
@@ -64,7 +65,7 @@ export default function Navbar({ pages, buttons }: NavbarProps) {
         </div>
         <Disclosure.Panel className='fixed top-14 xl:hidden bg-blue-800'>
             <div className='flex flex-col md:hidden p-3 text-left'>{pages.map((item, index) => {
-                const isActive = useSelectedLayoutSegment() === item.href;
+                const isActive = useSelectedLayoutSegment() === item.href.substring(1);
                 return <Disclosure.Button key={index}>
                     <Link
                         href={item.href}
@@ -81,6 +82,7 @@ export default function Navbar({ pages, buttons }: NavbarProps) {
                     <Link
                         href={item.href}
                         key={index}
+                        target='_blank'
                         className='button inline-block px-3 py-2 rounded-md transition-all text-zinc-300 bg-blue-700 hover:bg-blue-600 hover:text-white'
                     >
                         <FontAwesomeIcon icon={item.icon} className='inline-block mr-2' />
