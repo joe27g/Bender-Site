@@ -15,7 +15,7 @@ export type NavbarProps = {
 
 export type UserProps = {
     username: string,
-    discriminator: number,
+    discriminator: string,
     id: string,
     avatar: string | null
 }
