@@ -1,6 +1,6 @@
 import { faArrowTrendUp, faFrog, faGem, faImage, faNewspaper, faServer, faStar, faUsersCog, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { DASHBOARD_URL, PREFIX, WIKI_URL } from '../../constants';
+import { DASHBOARD_URL, OLD_SITE_PRO, PREFIX, WIKI_URL } from '../../constants';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { CommandResult } from '../../types';
@@ -116,7 +116,7 @@ export default async function Pro() {
         </div>
         <br/>
         <div className='text-center'>
-            <span className='text-zinc-600 dark:text-zinc-400'>Stripe checkout coming soon</span>
+            <span className='text-zinc-600 dark:text-zinc-400'>Stripe checkout coming soon. For now, please visit <Link href={OLD_SITE_PRO} target='_blank'>the old site</Link> for PayPal purchase options.</span>
             { /* TODO: Stripe integration */ }
         </div>
     </div>

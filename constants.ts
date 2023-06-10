@@ -5,6 +5,7 @@ export const CONTACT_EMAIL = 'contact@benderbot.co';
 export const DASHBOARD_URL = 'https://dashboard.benderbot.co';
 export const STATUS_URL = 'https://status.benderbot.co';
 export const WIKI_URL = 'https://wiki.benderbot.co';
+export const OLD_SITE_PRO = 'https://old.benderbot.co/pro';
 export const API_BASE_URL = 'https://api.benderbot.co'; // for client-side fetching
 
 export const PREFIX = ';';
