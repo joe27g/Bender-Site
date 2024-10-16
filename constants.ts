@@ -54,7 +54,7 @@ export const NAV_BUTTONS: NavLinkProps[] = [{
     icon: faUserCog
 }];
 
-export const COMMAND_GROUPS = ['infos','mod', 'misc', 'fun', 'text-tools', 'settings', 'util', 'nsfw', 'image-tools', 'memes', 'game-stats'] as const;
+export const COMMAND_GROUPS = ['infos','mod', 'misc', 'fun', 'text-tools', 'settings', 'util', 'image-tools', 'memes', 'game-stats'] as const;
 export const GROUP_NAMES: Record<Group, string> = {
     'infos': 'Information',
     'mod': 'Moderation',
@@ -63,7 +63,6 @@ export const GROUP_NAMES: Record<Group, string> = {
     'text-tools': 'Text Tools',
     'settings': 'Settings',
     'util': 'Utility',
-    'nsfw': 'NSFW',
     'image-tools': 'Image Tools',
     'memes': 'Memes',
     'game-stats': 'Game Stats'
