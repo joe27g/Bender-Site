@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Separator from '../../components/separator';
 import Link from 'next/link';
-import { CONTACT_EMAIL, DASHBOARD_URL, PREFIX } from '../../constants';
+import { CONTACT_EMAIL, PREFIX } from '../../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCookieBite, faScroll } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,10 +19,6 @@ export default function TOS() {
                 <br/>
                 <h2 className='text-2xl text-black dark:text-white'>Cloudflare</h2>
                 <span className='text-zinc-600 dark:text-zinc-400'>This website (benderbot.co) and Discord (discord.com) use Cloudflare (cloudflare.com) to serve pages and assets, respectively. As a result, cookies from Cloudflare are created when these assets are served. These cookies include, but are not necessarily limited to, an ID for your request that is used to help serve content more effectively. For more information, please see <Link href='https://www.cloudflare.com/privacypolicy/' target='_blank'>Cloudflare's privacy policy</Link>.</span>
-                <br/>
-                <br/>
-                <h2 className='text-2xl text-black dark:text-white'>Dashboard</h2>
-                <span>Upon visiting <Link href={DASHBOARD_URL}>the dashboard</Link>, cookies are created when you log in with Discord/PayPal. This is necessary for the dashboard to function, and the cookies created are tokens that are used to obtain information from the Discord and PayPal APIs. This information is only used temporarily to authenticate users and is deleted automatically when you log out.</span>
             </div>
             <br/>
             <div className='flex flex-row bg-amber-500 text-black py-4 pr-8 rounded-xl items-center'>

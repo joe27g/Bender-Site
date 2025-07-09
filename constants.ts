@@ -1,11 +1,9 @@
-import { faArrowTrendUp, faBookBookmark, faClipboardList, faGem, faLink, faMessage, faScroll, faUserCog } from '@fortawesome/free-solid-svg-icons';
+import { faArrowTrendUp, faBookBookmark, faClipboardList, faGem, faLink, faMessage, faScroll } from '@fortawesome/free-solid-svg-icons';
 import { Group, NavLinkProps } from './types';
 
 export const CONTACT_EMAIL = 'contact@benderbot.co';
-export const DASHBOARD_URL = 'https://dashboard.benderbot.co';
 export const STATUS_URL = 'https://status.benderbot.co';
 export const WIKI_URL = 'https://wiki.benderbot.co';
-export const OLD_SITE_PRO = 'https://old.benderbot.co/pro';
 export const API_BASE_URL = 'https://api.benderbot.co'; // for client-side fetching
 
 export const PREFIX = ';';
@@ -48,10 +46,6 @@ export const NAV_BUTTONS: NavLinkProps[] = [{
     name: 'Support',
     href: '/support',
     icon: faMessage
-}, {
-    name: 'Dashboard',
-    href: DASHBOARD_URL,
-    icon: faUserCog
 }];
 
 export const COMMAND_GROUPS = ['infos','mod', 'misc', 'fun', 'text-tools', 'settings', 'util', 'image-tools', 'memes', 'game-stats'] as const;

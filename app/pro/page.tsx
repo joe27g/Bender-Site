@@ -1,6 +1,6 @@
 import { faArrowTrendUp, faFrog, faGem, faImage, faNewspaper, faServer, faStar, faUsersCog, faUsersLine } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { DASHBOARD_URL, OLD_SITE_PRO, PREFIX, WIKI_URL } from '../../constants';
+import { PREFIX, WIKI_URL } from '../../constants';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { CommandResult } from '../../types';
@@ -17,7 +17,7 @@ async function getCommands(): Promise<CommandResult | null> {
 
 export const metadata: Metadata = {
     title: 'Bender Pro',
-    description: 'Unlock dozens more features by purchasing Bender Pro!'
+    description: 'Unlock dozens more features with Bender Pro!'
 };
 
 export default async function Pro() {
@@ -97,26 +97,10 @@ export default async function Pro() {
             <span>But that's not all! More information about Bender Pro features is available on </span>
             <Link href={`${WIKI_URL}/pro`}>the wiki</Link>
             <span>.</span>
-            <br/>
-            <br/>
-            <span>More Bender Pro features are in development, and we're open to suggestions on what to add.</span>
-            <br/>
-            <span>If you have an idea for a new feature, feel free to type it in </span>
-            <Link className='bg-[rgba(114,137,218,.1)] text-[#7289da]' href='https://discord.com/channels/353660669490626560/353669122510422017' target='_blank'>#suggestions</Link>
-            <span> in </span>
-            <Link href='/support'>Bender's Lair</Link>
-            <span>.</span>
-            <br/>
-            <br/>
-            <span>After purchasing and linking your Discord account on the </span>
-            <Link href={DASHBOARD_URL} target='_blank'>dashboard</Link>
-            <span>, you will also receive the </span>
-            <span className='text-[#e8ff00]'>@Bender Pro</span>
-            <span> role in Bender's Lair.</span>
         </div>
         <br/>
         <div className='text-center'>
-            <span className='text-zinc-600 dark:text-zinc-400'>Stripe checkout coming soon. For now, please visit <Link href={OLD_SITE_PRO} target='_blank'>the old site</Link> for PayPal purchase options.</span>
+            <span className='text-zinc-600 dark:text-zinc-400'>Purchasing Bender Pro has been discontinued. Access will be provided for free on a case-by-case basis. To request access, please visit <Link href='/support'>Bender's Lair</Link> to contact the developer.</span>
             { /* TODO: Stripe integration */ }
         </div>
     </div>
